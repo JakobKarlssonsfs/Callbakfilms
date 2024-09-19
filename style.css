@@ -71,6 +71,7 @@ nav {
     color: white; /* Text color */
     text-decoration: none; /* Remove underline */
     font-size: 1.2em; /* Font size */
+     font: avenir;
     transition: color 0.3s; /* Smooth color transition */
 }
      
