@@ -13,7 +13,7 @@
         }
 
         /* Make the video cover the entire screen */
-        body, html {
+        body, htmL {
             height: 100%;
             overflow: hidden;
         }
@@ -68,7 +68,7 @@
 
     <!-- Video Background -->
     <video autoplay muted loop id="background-video">
-        <source src="your-video-file.mp4" type="video/mp4">
+        <source src="https://www.youtube.com/watch?v=UvLw6RoA6Ao" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
@@ -77,89 +77,6 @@
         <h1>Callbak</h1>
   
         <a href="#" class="btn">Learn More</a>
-    </div>
-
-</body>
-</html>
-Key points:
-Video Tag:
-
-
-
-Du sade:
-html code where i can link a video as a background
-ChatGPT sade:
-ChatGPT
-Here’s a simple HTML code where you can link an external video as a background:
-
-html
-Kopiera kod
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Background</title>
-    <style>
-        /* Resetting default margins and paddings */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Make sure the video covers the entire screen */
-        html, body {
-            height: 100%;
-            overflow: hidden;
-        }
-
-        /* Styling for the background video */
-        video {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            z-index: -1;
-            transform: translate(-50%, -50%);
-            background-size: cover;
-        }
-
-        /* Content displayed on top of the video */
-        .content {
-            position: relative;
-            z-index: 1;
-            text-align: center;
-            color: white;
-            font-family: Arial, sans-serif;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-
-        h1 {
-            font-size: 4em;
-        }
-
-        p {
-            font-size: 1.5em;
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Background Video -->
-    <video autoplay muted loop>
-        <source src="https://www.youtube.com/watch?v=UvLw6RoA6Ao" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-
-    <!-- Content on top of the video -->
-    <div class="content">
-        <h1>My Video Background</h1>
-        <p>This is a website with a video background from an external link.</p>
     </div>
 
 </body>
