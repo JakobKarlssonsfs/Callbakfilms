@@ -38,17 +38,7 @@
             transform: translateY(-50%);
         }
 
-        h1 {
-            font-size: 4em;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 1.5em;
-        }
-
-        /* Add some styling for buttons */
-        .btn {
+     
             background-color: #000000;
             color: white;
             padding: 15px 25px;
