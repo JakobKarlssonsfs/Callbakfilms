@@ -1,8 +1,23 @@
- * {
+
+       
+  * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        } video {
+        } 
+        
+        @font-face {
+          font-family: 'Avenir';
+          src: url('Avenir-Medium.woff2') format('woff2'),
+               url('Avenir-medium.woff') format('woff'),
+               url('Avenir-Medium.ttf') format('truetype');
+          font-weight: normal;
+          font-style: normal;
+      }
+        
+        
+        
+        video {
       position: absolute;
     top: 50%;
     left: 50%;
@@ -35,4 +50,21 @@ nav ul li a {
 nav ul li a:hover {
   color: rgb(163, 163, 163); /* Change color on hover */
 }
-     
+nav ul li {
+  display: inline-block; /* Display items inline */
+  margin-right: 20px; /* Space between the menu items */
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Remove margin for the last item */
+}
+
+/* Style the links */
+nav ul li a {
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  font-size: 24px;
+  padding: 5px 10px;
+    font-family: Avenir;
+
+}
