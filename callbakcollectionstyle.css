@@ -13,7 +13,7 @@ html, body {
 
 /* Set the fullscreen background image */
 body {
-    background-image: URL ('https://raw.githubusercontent.com/JakobKarlssonsfs/Callbakfilms/main/Page_3_AboutUs.jpg'); /* URL of the image */
+    background-image: URL 
     background-size: cover; /* Ensure the image covers the entire screen */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Don't repeat the image */
