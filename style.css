@@ -7,12 +7,20 @@
         } 
         
         @font-face {
-          font-family: 'Avenir';
+          font-family: 'Avenir-Medium';
           src: url('Avenir-Medium.woff2') format('woff2'),
                url('Avenir-medium.woff') format('woff'),
                url('Avenir-Medium.ttf') format('truetype');
           font-weight: normal;
           font-style: normal;
+          
+          font-family: 'Avenir-Light';
+          src: url('Avenir-Light.woff2') format('woff2'),
+               url('Avenir-Light.woff') format('woff'),
+               url('Avenir-Light.ttf') format('truetype');
+          font-weight: normal;
+          font-style: normal;
+
       }
         
         
@@ -65,6 +73,6 @@ nav ul li a {
   text-decoration: none; /* Remove underline */
   font-size: 24px;
   padding: 5px 10px;
-    font-family: Avenir;
+    font-family: Avenir-Light;
 
 }
