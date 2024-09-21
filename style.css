@@ -23,19 +23,42 @@
         
         }
 
-.content {
-    list-style-type: none; /* Remove bullets */
-    display: flex; /* Display items in a row */
-    justify-content: center; /* Center the menu items */
-    padding: 1em 0; /* Add some padding */
-    margin: 0 15px; /* Space between items */
-        position: relative;
-    z-index: 1;
-    text-align: center;
-    color: white;
-    font-size: 2em;
-font-family: Avenir;
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } video {
+      position: absolute;
     top: 50%;
-    transform: translateY(-50%)
+    left: 50%;
+    min-width: 100%;
+     min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+      -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
+    object-fit: cover;
+    background-size: cover;
+    overflow: hidden;
+        
+        }
+nav ul {
+  text-align: center;
+  
+  list-style: none;
+
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+
+
+}
+
+nav ul li a:hover {
+  color: rgb(163, 163, 163); /* Change color on hover */
 }
      
