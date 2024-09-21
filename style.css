@@ -22,9 +22,12 @@
           font-style: normal;
 
       }
-               
+    
+html, body {
+    height: 100%;
+    overflow: hidden;            
        
-video-container {
+video {
         position: fixed;
         top: 50%;
         bottom: 50%;
