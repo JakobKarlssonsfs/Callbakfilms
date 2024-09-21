@@ -1,1 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Ensure body takes up full viewport height and width */
+html, body {
+    height: 100%;
+    width: 100%;
+    color: wite;
+}
+
+/* Set the fullscreen background image */
+body {
+    background-image: URL ('https://raw.githubusercontent.com/JakobKarlssonsfs/Callbakfilms/main/Page_3_AboutUs.jpg'); /* URL of the image */
+    background-size: cover; /* Ensure the image covers the entire screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Don't repeat the image */
+    background-attachment: fixed; /* Keep the image fixed when scrolling */
+}
+
+/* Simple styling for text */
+h1, p {
+    color: white; /* Make text color white for better contrast */
+    text-align: center; /* Center the text */
+    margin-top: -100%; /* Push text down slightly */
+    font-size: 30px;
+}
