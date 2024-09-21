@@ -25,11 +25,13 @@
     
 html, body {
     overflow: hidden;            
+     height: 100%;
        
 video-container video {
         position: fixed;
         top: 50%;
         bottom: 50%;
+       left: 50%;
         overflow: hidden;
         object-fit: contain;
         min-width: 100%;
