@@ -1,1 +1,10 @@
-
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-image: url('https://github.com/JakobKarlssonsfs/Callbakfilms/blob/main/Page_3_About%20Us.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
