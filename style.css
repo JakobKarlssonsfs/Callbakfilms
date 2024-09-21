@@ -5,12 +5,6 @@
             box-sizing: border-box;
         }
 
-html, body {
-    height: 100%;
-    overflow: hidden;
-  font-family: 'Nunito', 'Arial', sans-serif;
-}
-
         video {
       position: absolute;
     top: 50%;
@@ -28,8 +22,9 @@ html, body {
     overflow: hidden;
         
         }
-
-.nav {
+content { z-index: 1;
+}
+nav {
     position: relative;
     z-index: 1;
     text-align: center;
@@ -40,14 +35,11 @@ font-family: Avenir;
     transform: translateY(-50%);
         }
 
-     .nav-menu {
+nav-menu {
     list-style-type: none; /* Remove bullets */
     display: flex; /* Display items in a row */
     justify-content: center; /* Center the menu items */
     padding: 1em 0; /* Add some padding */
-}
-
-.nav-menu li {
     margin: 0 15px; /* Space between items */
 }
 
