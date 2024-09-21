@@ -5,15 +5,10 @@
             box-sizing: border-box;
         }
 
-        /* Make the video cover the entire screen */
-        body, htmL {
-            height: 100%;
-            overflow: hidden;
-        }
 html, body {
     height: 100%;
     overflow: hidden;
-    font-family: Avenir;
+  font-family: 'Nunito', 'Arial', sans-serif;
 }
 
         .video-bg {
@@ -31,8 +26,7 @@ html, body {
     object-fit: cover;
     background-size: cover;
     overflow: hidden;
-   
-             
+        
         }
 
 .mobile {
@@ -80,7 +74,6 @@ nav {
     color: white; /* Text color */
     text-decoration: none; /* Remove underline */
     font-size: 1.2em; /* Font size */
-    font-family: Avenir ;
     transition: color 0.3s; /* Smooth color transition */
 }
      
