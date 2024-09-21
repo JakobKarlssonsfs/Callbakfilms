@@ -1,78 +1,84 @@
 
        
   * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        } 
-       
- video {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body {
+  height: 100%;
+overflow: hidden;
+
+}
+
+video {
 
 position: absolute;
-    top: 50%;
-    left: 50%;
-    width: auto;
-    height: auto;
-    z-index: -1;
- -webkit-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%, -50%);
-    object-fit: cover;
-    background-size: cover;
-    overflow: hidden;
-        
-        }
+top: 50%;
+left: 50%;
+width: auto;
+height: auto;
+z-index: -1;
+-webkit-transform: translate(-50%,-50%);
+-ms-transform: translate(-50%,-50%);
+transform: translate(-50%, -50%);
+object-fit: cover;
+background-size: cover;
+overflow: hidden;
 
- @font-face {
-          font-family: 'Avenir-Medium';
-          src: url('/Fonts/Avenir-Medium.woff2') format('woff2'),
-               url('/Fonts/Avenir-medium.woff') format('woff'),
-               url('Fonts/Avenir-Medium.ttf') format('truetype');
-          font-weight: normal;
-          font-style: normal;
-          
-          font-family: 'Avenir-Light';
-          src: url('/Fonts/Avenir-Light.woff2') format('woff2'),
-               url('/Fonts/Avenir-Light.woff') format('woff'),
-               url('/Fonts/Avenir-Light.ttf') format('truetype');
-          font-weight: normal;
-          font-style: normal;
+}
 
-      }
+@font-face {
+  font-family: 'Avenir-Medium';
+  src: url('/Fonts/Avenir-Medium.woff2') format('woff2'),
+       url('/Fonts/Avenir-medium.woff') format('woff'),
+       url('Fonts/Avenir-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  
+  font-family: 'Avenir-Light';
+  src: url('/Fonts/Avenir-Light.woff2') format('woff2'),
+       url('/Fonts/Avenir-Light.woff') format('woff'),
+       url('/Fonts/Avenir-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
 
 
 nav ul {
-  text-align: center;
-  list-style: none;
-       top: 100px;
+text-align: center;
+list-style: none;
+top: 100px;
 
 
 }
 nav ul li a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
+text-decoration: none;
+color: rgb(255, 255, 255);
 
 
 }
 
 nav ul li a:hover {
-  color: rgb(163, 163, 163); /* Change color on hover */
+color: rgb(163, 163, 163); /* Change color on hover */
 }
 nav ul li {
-  display: inline-block; /* Display items inline */
-  margin-right: 20px; /* Space between the menu items */
+display: inline-block; /* Display items inline */
+margin-right: 20px; /* Space between the menu items */
 }
 
 nav ul li:last-child {
-  margin-right: 0; /* Remove margin for the last item */
+margin-right: 0; /* Remove margin for the last item */
 }
 
 /* Style the links */
 nav ul li a {
-  color: white; /* Text color */
-  text-decoration: none; /* Remove underline */
-  font-size: 24px;
-  padding: 5px 10px;
-    font-family: 'Avenir-Light';
+color: white; /* Text color */
+text-decoration: none; /* Remove underline */
+font-size: 24px;
+padding: 5px 10px;
+font-family: 'Avenir-Light';
 
 }
