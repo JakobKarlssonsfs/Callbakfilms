@@ -22,10 +22,7 @@
           font-style: normal;
 
       }
-    
-html, body {
-    overflow: hidden;            
-     height: 100%;
+
        
 video-container video {
         position: absolute;
