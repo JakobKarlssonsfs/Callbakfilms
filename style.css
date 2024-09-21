@@ -22,18 +22,6 @@
     overflow: hidden;
         
         }
-content { z-index: 1;
-}
-nav {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    color: white;
-    font-size: 2em;
-font-family: Avenir;
-    top: 50%;
-    transform: translateY(-50%);
-        }
 
 nav-menu {
     list-style-type: none; /* Remove bullets */
@@ -41,13 +29,13 @@ nav-menu {
     justify-content: center; /* Center the menu items */
     padding: 1em 0; /* Add some padding */
     margin: 0 15px; /* Space between items */
-}
-
-.nav-menu a {
-    color: white; /* Text color */
-    text-decoration: none; /* Remove underline */
-    font-size: 1.2em; /* Font size */
-    transition: color 0.3s; /* Smooth color transition */
-       font-family: 'Nunito', 'Arial', sans-serif;
+        position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+font-family: Avenir;
+    top: 50%;
+    transform: translateY(-50%)
 }
      
