@@ -40,10 +40,6 @@ font-family: Avenir;
     transform: translateY(-50%);
         }
 
-nav {
-    background-color: #333;
-}
-
      .nav-menu {
     list-style-type: none; /* Remove bullets */
     display: flex; /* Display items in a row */
