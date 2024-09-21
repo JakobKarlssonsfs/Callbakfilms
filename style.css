@@ -13,7 +13,7 @@
 html, body {
     height: 100%;
     overflow: hidden;
-    font-family: Arial, sans-serif;
+    font-family: Avenir;
 }
 
         .video-bg {
@@ -80,7 +80,7 @@ nav {
     color: white; /* Text color */
     text-decoration: none; /* Remove underline */
     font-size: 1.2em; /* Font size */
-    font-family:'Avenir ;
+    font-family: Avenir ;
     transition: color 0.3s; /* Smooth color transition */
 }
      
