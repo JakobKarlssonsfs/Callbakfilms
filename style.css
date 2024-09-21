@@ -23,7 +23,7 @@
         
         }
 
-nav-menu {
+.content {
     list-style-type: none; /* Remove bullets */
     display: flex; /* Display items in a row */
     justify-content: center; /* Center the menu items */
