@@ -26,8 +26,8 @@
         
         
         video {
-               zoom: -2;
-      position: absolute;
+
+position: absolute;
     top: 50%;
     left: 50%;
     min-width: 100%;
@@ -35,14 +35,14 @@
     width: auto;
     height: auto;
     z-index: -1;
-      -webkit-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
   transform: translate(-50%, -50%);
     object-fit: cover;
     background-size: cover;
     overflow: hidden;
         
         }
+
+
 nav ul {
   text-align: center;
   list-style: none;
