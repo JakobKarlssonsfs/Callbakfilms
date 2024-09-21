@@ -5,26 +5,7 @@
             padding: 0;
             box-sizing: border-box;
         } 
-        
-        @font-face {
-          font-family: 'Avenir-Medium';
-          src: url('/Fonts/Avenir-Medium.woff2') format('woff2'),
-               url('/Fonts/Avenir-medium.woff') format('woff'),
-               url('Fonts/Avenir-Medium.ttf') format('truetype');
-          font-weight: normal;
-          font-style: normal;
-          
-          font-family: 'Avenir-Light';
-          src: url('/Fonts/Avenir-Light.woff2') format('woff2'),
-               url('/Fonts/Avenir-Light.woff') format('woff'),
-               url('/Fonts/Avenir-Light.ttf') format('truetype');
-          font-weight: normal;
-          font-style: normal;
-
-      }
-
        
-
  video {
 
 position: absolute;
@@ -43,6 +24,24 @@ position: absolute;
     overflow: hidden;
         
         }
+
+ @font-face {
+          font-family: 'Avenir-Medium';
+          src: url('/Fonts/Avenir-Medium.woff2') format('woff2'),
+               url('/Fonts/Avenir-medium.woff') format('woff'),
+               url('Fonts/Avenir-Medium.ttf') format('truetype');
+          font-weight: normal;
+          font-style: normal;
+          
+          font-family: 'Avenir-Light';
+          src: url('/Fonts/Avenir-Light.woff2') format('woff2'),
+               url('/Fonts/Avenir-Light.woff') format('woff'),
+               url('/Fonts/Avenir-Light.ttf') format('truetype');
+          font-weight: normal;
+          font-style: normal;
+
+      }
+
 
 nav ul {
   text-align: center;
