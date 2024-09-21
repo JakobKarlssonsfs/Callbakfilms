@@ -44,8 +44,9 @@
         }
 nav ul {
   text-align: center;
-  
   list-style: none;
+       top: 100px;
+
 
 }
 nav ul li a {
