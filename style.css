@@ -8,16 +8,16 @@
         
         @font-face {
           font-family: 'Avenir-Medium';
-          src: url('Avenir-Medium.woff2') format('woff2'),
-               url('Avenir-medium.woff') format('woff'),
-               url('Avenir-Medium.ttf') format('truetype');
+          src: url('/Fonts/Avenir-Medium.woff2') format('woff2'),
+               url('/Fonts/Avenir-medium.woff') format('woff'),
+               url('Fonts/Avenir-Medium.ttf') format('truetype');
           font-weight: normal;
           font-style: normal;
           
           font-family: 'Avenir-Light';
-          src: url('Avenir-Light.woff2') format('woff2'),
-               url('Avenir-Light.woff') format('woff'),
-               url('Avenir-Light.ttf') format('truetype');
+          src: url('/Fonts/Avenir-Light.woff2') format('woff2'),
+               url('/Fonts/Avenir-Light.woff') format('woff'),
+               url('/Fonts/Avenir-Light.ttf') format('truetype');
           font-weight: normal;
           font-style: normal;
 
