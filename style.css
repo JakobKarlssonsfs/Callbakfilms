@@ -66,7 +66,8 @@ color: rgb(163, 163, 163); /* Change color on hover */
 }
 nav ul li {
 display: inline-block; /* Display items inline */
-margin-right: 20px; /* Space between the menu items */
+margin-right: 30px; /* Space between the menu items */
+margin-top: 2%;
 }
 
 nav ul li:last-child {
@@ -75,10 +76,20 @@ margin-right: 0; /* Remove margin for the last item */
 
 /* Style the links */
 nav ul li a {
+
 color: white; /* Text color */
 text-decoration: none; /* Remove underline */
 font-size: 24px;
 padding: 5px 10px;
 font-family: 'Avenir-Light';
 
+
+}
+@media (max-width: 768px) {
+  .hero {
+      font-size: 2em;
+  }
+  .page {
+      font-size: 1.5em;
+  }
 }
