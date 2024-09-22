@@ -4,9 +4,32 @@
     box-sizing: border-box;
 }
 
-p {
+h1, p {
     color: white; /* Make text color white for better contrast */
     text-align: center; /* Center the text */
     margin-top: -100%; /* Push text down slightly */
     font-size: 30px;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+body {
+background-image: center;
+    position: absolute;
+top: 50%;
+left: 50%;
+width: auto;
+height: auto;
+z-index: -1;
+-webkit-transform: translate(-50%,-50%);
+-ms-transform: translate(-50%,-50%);
+transform: translate(-50%, -50%);
+object-fit: cover;
+background-size: cover;
+overflow: hidden;
+
 }
