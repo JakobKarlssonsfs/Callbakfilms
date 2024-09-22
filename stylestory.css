@@ -109,6 +109,10 @@ font-size: 30px;
 }
 /* Responsive text size for smaller screens */
 @media (max-width: 768px) {
+    .background-image {
+    
+    width: 100%;
+    }
     .hero {
         font-size: 0.8em; 
 
