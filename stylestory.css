@@ -1,5 +1,121 @@
-body {
-background-image: URL "('https://raw.githubusercontent.com/JakobKarlssonsfs/Callbakfilms/main/story.jpg')"
+ 
+    @font-face {
+        font-family: 'Avenir-Medium';
+        src: url('/Fonts/Avenir-Medium.woff2') format('woff2'),
+             url('/Fonts/Avenir-medium.woff') format('woff'),
+             url('Fonts/Avenir-Medium.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        
+        font-family: 'Avenir-Light';
+        src: url('/Fonts/Avenir-Light.woff2') format('woff2'),
+             url('/Fonts/Avenir-Light.woff') format('woff'),
+             url('/Fonts/Avenir-Light.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+/* Reset margins and padding */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Avenir-Light;
+    height: 100%; /* Ensure full height for background coverage */
+}
 
-  
+.background-image {
+    background-image:url('https://raw.githubusercontent.com/JakobKarlssonsfs/Callbakfilms/main/story.jpg');
+    background-size: cover; /* Cover entire area */
+    background-attachment:scroll ;
+    background-position:center;
+ height:100%;
+
+}
+
+/* Fullscreen hero section */
+.hero {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-size: 1,5em;
+    font-family: Avenir-Light;
+   
+}
+.hero h1 {
+    margin-top: -30%;
+    
+}
+
+/* Page section with text on left and right */
+.page, p {
+    background-image:url('https://raw.githubusercontent.com/JakobKarlssonsfs/Callbakfilms/main/story.jpg');
+    height: 100vh; /* Each section is 100% of the viewport height */
+    display: flex;
+    justify-content: space-between; /* Push left and right sections apart */
+    align-items: bottom; /* Center the text vertically */
+    padding: 0 20%; /* Add padding on both sides to leave space in the middle */
+    color: white;
+    font-size: 2em;
+    text-align: bottom;
+    margin-top: 5%;
+    
+}
+
+.page, p {
+
+   
+    width: 100px; /* Set width of the profile picture */
+    height: auto; /* Maintain aspect ratio */
+   /* Make the image circular */
+
+}
+   .page .profile-pic {
+
+    margin-top: 5%; /* Space between text and image */
+    width: 100px; /* Set width of the profile picture */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20%; /* Make the image circular */
+justify-content: flex-start
+
+}
+
+    /* Left and right sections */
+.left {
+    width: 25%; /* 40% width on the left side */
+    display: flex;
+    justify-content: top;
+    align-items: flex-start;
+    margin-top: 5%;
+
+
+}
+
+.page .profile-pic2 {
+
+    margin-top: 5%; /* Space between text and image */
+    width: 100px; /* Set width of the profile picture */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20%; /* Make the image circular */
+justify-content: flex-start
+
+}
+
+.right {
+    width: 25%; /* 40% width on the right side */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive text size for smaller screens */
+@media (max-width: 768px) {
+    .hero {
+        font-size: 2em;
+    }
+    .page {
+        font-size: 1.5em;
+    }
 }
