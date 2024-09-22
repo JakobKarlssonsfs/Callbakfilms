@@ -87,15 +87,31 @@ font-family: 'Avenir-Light';
 }
 @media (max-width: 768px) {
   .hero {
-      font-size: 2em;
+      font-size: 1em;
+      
   }
   .page {
-      font-size: 1.5em;
+      font-size: 0.6em;
   }
        nav ul li a {
-              color:#000000;
+              color:#ffffff;
+              font-size: 0.8em;
+              
        }
-       .video {
-              width: 100%;
+       video {
+              width: 175%;
+              height:auto;
+              
+       }
+       nav ul {
+         margin-top:35%;
+       
+         text-align: center;
+        
+list-style: none;
+top: 10%
+       }
+
+html { background-color:#000000;
 }
 }
