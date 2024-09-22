@@ -94,4 +94,8 @@ font-family: 'Avenir-Light';
   }
        nav ul li a {
               color:#000000;
+       }
+       .video {
+              width: 100%;
+}
 }
