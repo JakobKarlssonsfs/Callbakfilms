@@ -15,17 +15,16 @@
         font-style: normal;
     }
     
-/* Reset margins and padding */
 html, body {
     margin: 0;
     padding: 0;
     font-family: Avenir-Light;
-    height: 100%; /* Ensure full height for background coverage */
+    height: 100%; 
 }
 
 .background-image {
     background-image:url('https://raw.githubusercontent.com/JakobKarlssonsfs/Callbakfilms/main/story.jpg');
-    background-size: cover; /* Cover entire area */
+    background-size: cover;
     background-attachment:scroll ;
     background-position:center;
  height:100%;
@@ -50,64 +49,63 @@ html, body {
 }
 
 /* Page section with text on left and right */
-.page, p {
+.page {
     background-image:url('https://raw.githubusercontent.com/JakobKarlssonsfs/Callbakfilms/main/story.jpg');
     height: 100vh; /* Each section is 100% of the viewport height */
-    display: flex;
-    justify-content: space-between; /* Push left and right sections apart */
-    align-items: bottom; /* Center the text vertically */
-    padding: 0 20%; /* Add padding on both sides to leave space in the middle */
-    color: white;
-    font-size: 2em;
-    text-align: bottom;
+background-attachment:scroll ;
+    width: auto;
+    overflow:hidden;
     margin-top: 5%;
     
-}
-
-.page, p {
-
-   
-    width: 100px; /* Set width of the profile picture */
-    height: auto; /* Maintain aspect ratio */
-   /* Make the image circular */
+    
 
 }
-   .page .profile-pic {
 
-    margin-top: 5%; /* Space between text and image */
-    width: 100px; /* Set width of the profile picture */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 20%; /* Make the image circular */
-justify-content: flex-start
 
-}
+
 
     /* Left and right sections */
-.left {
-    width: 25%; /* 40% width on the left side */
-    display: flex;
-    justify-content: top;
-    align-items: flex-start;
+ .profile-pic1 {
+    margin-left: 10%;
     margin-top: 5%;
-
-
-}
-
-.page .profile-pic2 {
-
-    margin-top: 5%; /* Space between text and image */
-    width: 100px; /* Set width of the profile picture */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 20%; /* Make the image circular */
-justify-content: flex-start
-
-}
-
-.right {
-    width: 25%; /* 40% width on the right side */
-    display: flex;
+    width: 140px; 
+    height: auto;
+   
     justify-content: center;
+    border-radius: 50%; /* Make the image circular */
     align-items: center;
+    padding: 5px;
+
+}
+
+ .profile-pic2 {
+    width: 140px;
+height: auto;
+   margin-left: 70%;
+   margin-top: -50%;
+   margin-bottom: 100%;
+   align-items: top;
+
+    border-radius: 50%; /* Make the image circular */
+padding: 5px;
+}
+
+.pjk {
+    font-family: Avenir-Light;
+    font-size: 30px;
+
+margin-right: -100%;
+margin-top: 10%;
+color: white;
+}
+
+.prc {
+
+    font-family: Avenir-Light;
+font-size: 30px;
+    color: white;
+    margin-left: 7%;
+
 }
 
 /* Responsive text size for smaller screens */
