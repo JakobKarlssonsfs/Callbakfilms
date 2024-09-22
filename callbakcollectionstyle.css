@@ -1,3 +1,69 @@
+
+@font-face {
+    font-family: 'Avenir-Medium';
+    src: url('/Fonts/Avenir-Medium.woff2') format('woff2'),
+         url('/Fonts/Avenir-medium.woff') format('woff'),
+         url('Fonts/Avenir-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    
+    font-family: 'Avenir-Light';
+    src: url('/Fonts/Avenir-Light.woff2') format('woff2'),
+         url('/Fonts/Avenir-Light.woff') format('woff'),
+         url('/Fonts/Avenir-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Avenir-Light;
+    height: 100%; 
+}
+
+.background-image {
+    background-image:url('https://raw.githubusercontent.com/JakobKarlssonsfs/Callbakfilms/main/callbakcollection.jpg');
+    background-size: cover;
+    background-attachment:scroll ;
+    background-position:center;
+ height:100%;
+ 
+
+}
+
+.hero {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-size: 1,5em;
+    font-family: Avenir-Light;
+}
+
+.hero h1 {
+color: rgb(207, 207, 207);
+font-family: Avenir-Light;
+text-align: justify;
+text-align:center;
+margin-top:-30%;
+
+}
+
+.page {
+    background-image:url('https://raw.githubusercontent.com/JakobKarlssonsfs/Callbakfilms/main/callbakcollection.jpg');
+    height: 100vh; 
+    background-attachment:scroll;
+    width:auto;
+    overflow:hidden;
+    margin-top: 5%;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,18 +76,12 @@ html, body {
     color: white;
     z-index:-1;
 }
-
-body {
-    background-size: cover; /* Ensure the image covers the entire screen */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Don't repeat the image */
-    background-attachment: fixed; /* Keep the image fixed when scrolling */
-}
-
-/* Simple styling for text */
-h1, p {
-    color: white; /* Make text color white for better contrast */
-    text-align: center; /* Center the text */
-    margin-top: -50%; /* Push text down slightly */
-    font-size: 30px;
+/* Responsive text size for smaller screens */
+@media (max-width: 768px) {
+    .hero {
+        font-size: 2em;
+    }
+    .page {
+        font-size: 1.5em;
+    }
 }
