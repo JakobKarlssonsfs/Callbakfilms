@@ -25,6 +25,7 @@ html, body {
     color:black;
     font-family: Avenir-Book;
     z-index:1;
+    font-size: 4em;
 
   
 
@@ -41,10 +42,19 @@ p {
 
 /* Responsive text size for smaller screens */
 @media (max-width: 768px) {
-    .hero {
+    .hero h1 {
         font-size: 2em;
+       text-align: center;
     }
-    .page {
+    .hero {
+        margin-top: -4%;
+    }
+       body {
+           margin-top:-38%;
+           
+       }
+    
+    #p {
         font-size: 1.5em;
     }
 }
