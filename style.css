@@ -53,11 +53,14 @@ list-style: none;
 top: 100px;
 
 
+
+
 }
 nav ul li a {
 text-decoration: none;
 color: rgb(255, 255, 255);
 
+position:relative;
 
 }
 
@@ -86,32 +89,39 @@ font-family: 'Avenir-Light';
 
 }
 @media (max-width: 768px) {
+
+  video {
+    width: 0%;
+    z-index: -1;
+  }
   .hero {
-      font-size: 1em;
+      font-size: 1.5em;
       
   }
   .page {
-      font-size: 0.6em;
+      font-size: 1em;
   }
        nav ul li a {
               color:#ffffff;
               font-size: 0.8em;
+              padding: 0.3px 0.3px;
+              text-align: center;
               
        }
-       video {
-              width: 175%;
-              height:auto;
-              
-       }
+            
        nav ul {
          margin-top:35%;
-       
+         padding: 1px 1px;
          text-align: center;
         
 list-style: none;
 top: 10%
        }
 
-html { background-color:#000000;
-}
+body { 
+  background-image:url('https://raw.githubusercontent.com/JakobKarlssonsfs/Callbakfilms/main/freedome.png');
+
+
+ }
+
 }
