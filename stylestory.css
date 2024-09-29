@@ -21,14 +21,10 @@
         box-sizing: border-box;
     }
     
-html, body {
-    margin: 0;
-    padding: 0;
-    font-family: Avenir-Light;
 
 
-    
-}
+
+
 
 /* Page section with text on left and right */
 
@@ -61,7 +57,7 @@ html, body {
     /* Left and right sections */
 .profile-pic1 {
     margin-left: 0%;
-    margin-top: 5%;
+    margin-top: 2%;
     width: 15%; 
     height: auto;
    
@@ -76,7 +72,7 @@ html, body {
     width: 15%;
 height: auto;
    margin-left: 0%;
-   margin-top: 5%;
+   margin-top: 2%;
    align-items: center;
 
     border-radius: 50%; /* Make the image circular */
@@ -90,23 +86,54 @@ background-size: cover;
     align-items: center;
 }
 
-.pjk {
-   
-    align-items: center;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: 1,5em;
-    font-family: Avenir-Light;
-   
-}
 
 .prc {
 
     font-family: Avenir-Light;
-font-size: 30px;
-    color: white;
-    margin-left: 45%;
+font-size: 2em;
+    color: rgb(10, 10, 10);
+    text-align: center;
+    font-size: 1,5em;
+    z-index:1;
+  
+}
 
+.pjk {
+   
+    align-items: center;
+    color: rgb(3, 3, 3);
+    text-align: center;
+    font-size: 2em;
+    font-family: Avenir-Light;
+    z-index:1;
+}
+
+
+.ppm {
+
+    font-family: Avenir-Light;
+font-size: 2em;
+    color: rgb(10, 10, 10);
+    text-align: center;
+    z-index:1;
+}
+
+.pas {
+
+    font-family: Avenir-Light;
+font-size: 2em;
+    color: rgb(10, 10, 10);
+    text-align: center;
+    z-index:1;
+}
+
+.pml {
+
+    font-family: Avenir-Light;
+font-size: 2em;
+    color: rgb(10, 10, 10);
+    text-align: center;
+    z-index:1;
 }
 
 /* Responsive text size for smaller screens */
@@ -129,24 +156,31 @@ font-size: 30px;
     }
 
     .profile-pic1 {
-        margin-left: 30%;
+       
         margin-top: 5%;
-        width: 140px; 
+        width: 25%; 
+
         height: auto;
        
         justify-content: center;
         border-radius: 50%; /* Make the image circular */
         align-items: center;
-        padding: 5px;
-    }
-    .prc {
-
-        font-family: Avenir-Light;
-    font-size: 30px;
-        color: white;
-        margin-left: 32%;
-        margin-top: -10%;
     
     }
+   
+
+    
+    }
+    
+    .profile-pic2 {
+       
+        margin-top: 5%;
+        width: 25%; 
+
+        height: auto;
+       
+        justify-content: center;
+        border-radius: 50%; /* Make the image circular */
+        align-items: center;
     
 }
