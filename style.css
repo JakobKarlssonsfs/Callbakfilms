@@ -94,7 +94,7 @@ font-family: 'Avenir-Light';
 
 }
 
-@media (max-width: 2000px) {
+@media (max-width: 768px) {
 
 
 video {
@@ -113,7 +113,7 @@ video {
 .cblogo img{
 position:absolute;
 top:10%;
-left:37%;
+left:34.2%;
 width: 30%;
   
   }
@@ -137,6 +137,10 @@ width: 30%;
 list-style: none;
        }
 
+       nav ul li {
+         
+         margin-right:2%;
+       }
 body { 
   color:black;
 
