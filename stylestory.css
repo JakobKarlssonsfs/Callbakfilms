@@ -22,25 +22,17 @@
     }
     
 
-
-
-
-
-/* Page section with text on left and right */
-
     
     .page {
-        background-image:url('https://raw.githubusercontent.com/JakobKarlssonsfs/Callbakfilms/main/story.jpg');
+        background-image:url('https://raw.githubusercontent.com/JakobKarlssonsfs/Callbakfilms/main/redeyes.png');
         height: 100vh; /* Full viewport height */
     width: 100%;
     
 
     color: rgb(255, 255, 255);
     text-align: center;
-    font-size: 1,5em;
-    font-family: Avenir-Light;
     overflow: hidden;
-    margin-bottom: 3%;
+    margin-bottom: 2%;
     z-index:-1;
 
 
@@ -55,6 +47,38 @@
 
 }
 
+.page h2 {
+
+    margin-top: 26%;
+    font-size: 3em;
+    font-family: Avenir-Light;
+
+}
+
+.epage {
+    background-image:url('https://raw.githubusercontent.com/JakobKarlssonsfs/Callbakfilms/main/handkerchief.png');
+            height: 100vh; /* Full viewport height */
+            width: 100%;
+        
+            object-fit: cover;
+            align-items: center;
+            text-align: center;
+            overflow:hidden;
+        font-family: Avenir-Light;
+        margin-bottom: 2%;
+    }
+
+.pagee {
+background-image:url('https://raw.githubusercontent.com/JakobKarlssonsfs/Callbakfilms/main/story.jpg');
+        height: 100vh; /* Full viewport height */
+        width: 100%;
+        object-fit: cover;
+        align-items: center;
+        text-align: center;
+        overflow:hidden;
+    font-family: Avenir-Light;
+    margin-bottom: 2%;
+}
 
     /* Left and right sections */
 .profile-pic1 {
@@ -88,6 +112,10 @@ background-size: cover;
     align-items: center;
 }
 
+#page1, #page2, #page3, #page4, #page5{
+
+background-size: 270em;
+}
 
 .prc {
 
@@ -140,14 +168,15 @@ font-size: 2em;
 
 /* Responsive text size for smaller screens */
 @media (max-width: 768px) {
-    .background-image {
-    
-    width: 100%;
 
-    }
+    
   .page h1{
         font-size: 4em;
-        
+        margin-top:25%;
+    }
+    .page h2 {
+        font-size: 4em;
+        margin-top:95%;
     }
 
     .profile-pic1 {
