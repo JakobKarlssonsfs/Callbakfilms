@@ -167,7 +167,7 @@ font-size: 2em;
 }
 
 /* Responsive text size for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 2330px) {
 
     
   .page h1{
