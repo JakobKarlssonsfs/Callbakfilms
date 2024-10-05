@@ -167,15 +167,15 @@ font-size: 2em;
 }
 
 /* Responsive text size for smaller screens */
-@media (max-width: 2330px) {
+@media (max-width: 768px) {
 
     
   .page h1{
-        font-size: 4em;
-        margin-top:25%;
+        font-size: 2em;
+        margin-top:47%;
     }
     .page h2 {
-        font-size: 4em;
+        font-size: 2em;
         margin-top:95%;
     }
 
