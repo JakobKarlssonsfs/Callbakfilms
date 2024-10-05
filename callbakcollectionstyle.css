@@ -55,15 +55,15 @@ font-family: Avenir-Light;
 align-items: center;
 color: white;
 text-align: center;
-font-size: 2em;
+font-size: 1,5em;
 z-index:1;
-margin-top: 7%;
+margin-top: 15%;
 
 }
 
 #page1 {
 
-    background-image:url('https://raw.githubusercontent.com/JakobKarlssonsfs/Callbakfilms/main/resrain.png');
+    background-image:url('https://raw.githubusercontent.com/JakobKarlssonsfs/Callbakfilms/main/freedome.png');
 }
 
 #page2 {
