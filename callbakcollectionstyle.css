@@ -51,19 +51,20 @@
 
 h1 {
 color: rgb(250, 250, 250);
-font-family: Avenir-Light;
+font-family:Avenir-Light;
 align-items: center;
 color: white;
 text-align: center;
-font-size: 1,5em;
+font-size: 1.8em;
 z-index:1;
-margin-top: 15%;
+margin-top: 14%;
 
 }
 
 #page1 {
 
     background-image:url('https://raw.githubusercontent.com/JakobKarlssonsfs/Callbakfilms/main/freedome.png');
+    font-family: Avenir-Light;
 }
 
 #page2 {
@@ -75,14 +76,17 @@ margin-top: 15%;
 @media (max-width: 768px) {
    
     
-    .page {
-        
+    #page1 {
+        background-size:65rem;
+
         margin-bottom:3%;
     }
 
     h1 {
 
-        font-size: 1.2em; 
-        margin-top:25%;
+        font-size: 1em; 
+        margin-top:75%;
+        font-family: Avenir-Light;
     }
+
 }
