@@ -30,15 +30,23 @@ overflow: hidden;
     
 }
 
-.cblogo img  {
+.cblogoblack img  {
 position:absolute;
-top:5%;
+top:82%;
 left:46.5%;
 width: 10%;
 align-items: center;
 justify-content: center;
 }
 
+.cblogowhite img  {
+  position:absolute;
+  top:2%;
+  left:46.5%;
+  width: 10%;
+  align-items: center;
+  justify-content: center;
+  }
 
 @font-face {
   font-family: 'Avenir-Medium';
@@ -62,7 +70,7 @@ nav ul {
 text-align: center;
 list-style: none;
 font-size: 2em;
-padding: 2% 2.5em;
+padding: 0% 2.5em;
 z-index: 1;
 position:center;
 
