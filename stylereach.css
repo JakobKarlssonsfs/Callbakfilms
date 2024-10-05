@@ -8,53 +8,73 @@ html, body {
 
 .background-image {
     background-image:url('https://raw.githubusercontent.com/JakobKarlssonsfs/Callbakfilms/main/cbpill.png');
+    background-position-x: center;
+    background-position-y: center;
     background-size: cover;
-    background-attachment:scroll ;
-    background-position:center;
-    margin-top:-28%;
- height:100%;
- z-index:-1;
+    height: 100vh;
+    width: 100%;
+    top:50;
+    left:50%;
+    object-fit: cover;
+    overflow:hidden;
+margin-bottom: 2%;
+z-index: -1;
 
 
 }
 
-.hero h1 {
+h1 {
 
-    text-align: justify;
+   justify-content: center;
     text-align:center;
-    color:black;
-    font-family: Avenir-Book;
-    z-index:1;
-    font-size: 4em;
-
+    color:rgb(0, 0, 0);
+    font-family: Avenir-Light;
+    font-size: 5em;
+    margin-top:20%;
+    margin-right:10%;
+  
   
 
 }
-
-p {
-    text-align: justify;
+h3 {
+    justify-content: center;
     text-align:center;
-    color:black;
-    font-family: Avenir-Book;
+    color:white;
+    font-family: Avenir-Light;
+    font-size: 5em;
+    margin-top:-10.5%;
+    margin-left:15%;
+
+}
+
+h2 {
+   justify-content: center;
+    text-align:center;
+    color:rgb(0, 0, 0);
+    font-family: Avenir-Light;
     z-index:1;
+    margin-top:-5%;
+    margin-right: 2%;
   
 }
 
 /* Responsive text size for smaller screens */
 @media (max-width: 768px) {
-    .hero h1 {
+    h1 {
         font-size: 2em;
        text-align: center;
+       margin-top:100%;
     }
-    .hero {
-        margin-top: -4%;
-    }
-       body {
-           margin-top:-38%;
-           
+     h3 {
+        font-size: 2em;
+        text-align: center; 
+        margin-left:30%;
+       margin-top:-17%;
        }
     
-    #p {
-        font-size: 1.5em;
+    h2 {
+        font-size: 0.7em;
+        margin-top: -10%;
+        margin-right:3%;
     }
 }
