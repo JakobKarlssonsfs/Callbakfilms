@@ -49,7 +49,9 @@
 
 .page h1 {
 
-    margin-top: 15%;
+    margin-top: 10%;
+    font-size: 3em;
+    font-family: Avenir-Light;
 
 }
 
@@ -141,18 +143,11 @@ font-size: 2em;
     .background-image {
     
     width: 100%;
-    }
-    .hero {
-        font-size: 0.8em; 
 
     }
-
-    .hero h1 {
-
-    margin-top:-95%;
-    }
-    .page {
-        font-size: 1.5em;
+  .page h1{
+        font-size: 4em;
+        
     }
 
     .profile-pic1 {
@@ -167,10 +162,6 @@ font-size: 2em;
         align-items: center;
     
     }
-   
-
-    
-    }
     
     .profile-pic2 {
        
@@ -182,5 +173,6 @@ font-size: 2em;
         justify-content: center;
         border-radius: 50%; /* Make the image circular */
         align-items: center;
+    }
     
 }
