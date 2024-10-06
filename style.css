@@ -78,7 +78,7 @@ position:center;
 }
 
 nav ul li a:hover {
-color: rgb(75, 75, 75); /* Change color on hover */
+color: rgb(155, 155, 155); /* Change color on hover */
 }
 
 nav ul li {
@@ -93,7 +93,7 @@ margin-right: 0; /* Remove margin for the last item */
 
 /* Style the links */
 nav ul li a {
-color:rgb(255, 255, 255);
+color:rgb(46, 46, 46);
 text-decoration: none; /* Remove underline */
 
 font-family: 'Avenir-Light';
