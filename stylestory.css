@@ -167,6 +167,23 @@ font-size: 2em;
 }
 
 /* Responsive text size for smaller screens */
+
+@media (max-width: 1100px) {
+
+
+    .page h1{
+        font-size: 3em;
+        margin-top:19.5%;
+    }
+    .page h2 {
+        font-size: 3em;
+        margin-top:40%;
+    }
+}
+
+
+
+
 @media (max-width: 768px) {
 
     
