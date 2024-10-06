@@ -69,7 +69,21 @@ margin-top: 10%;
 
 #page2 {
 
-    background-image:url('https://raw.githubusercontent.com/JakobKarlssonsfs/Callbakfilms/main/resblue.png');
+    background-image:url('https://raw.githubusercontent.com/JakobKarlssonsfs/Callbakfilms/main/marbleblack.jpg');
+}
+
+#page3 {
+
+    background-image:url('https://raw.githubusercontent.com/JakobKarlssonsfs/Callbakfilms/main/handkerchief.png');
+}
+
+#page4 {
+
+    background-image:url('https://raw.githubusercontent.com/JakobKarlssonsfs/Callbakfilms/main/redwater.jpg');
+}
+#page5 {
+
+    background-image:url('https://raw.githubusercontent.com/JakobKarlssonsfs/Callbakfilms/main/marbleblack.jpg');
 }
 
 /* Responsive text size for smaller screens */
