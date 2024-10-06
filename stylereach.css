@@ -13,11 +13,9 @@ html, body {
     background-size: cover;
     height: 100vh;
     width: 100%;
-    top:50;
-    left:50%;
+    position: absolute;
     object-fit: cover;
     overflow:hidden;
-margin-bottom: 2%;
 z-index: -1;
 
 
@@ -27,54 +25,117 @@ h1 {
 
    justify-content: center;
     text-align:center;
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
     font-family: Avenir-Light;
     font-size: 5em;
-    margin-top:20%;
-    margin-right:10%;
+    margin-top:35%;
+    margin-right:-60%;
   
   
 
 }
-h3 {
-    justify-content: center;
-    text-align:center;
-    color:white;
-    font-family: Avenir-Light;
-    font-size: 5em;
-    margin-top:-10.5%;
-    margin-left:15%;
 
-}
 
 h2 {
    justify-content: center;
     text-align:center;
-    color:rgb(0, 0, 0);
+    color:rgb(148, 148, 148);
     font-family: Avenir-Light;
     z-index:1;
-    margin-top:-5%;
-    margin-right: 2%;
+    margin-top:-4%;
+    margin-right: -60%;
   
 }
+
+body {
+    display: flex;
+justify-content: center;
+ align-items: top;
+
+    
+}
+.email-form {
+    background-color: rgba(0, 36, 8, 0.692);
+    padding: 4rem; /* Padding relative to root font size */
+    border-radius: 0.625rem; /* 10px as rem */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.048); /* Relative to 16px */
+    width: 80%; /* Use percentage to adapt to screen width */
+    max-width: 25rem; /* Maximum width of 400px to keep form from getting too wide */
+margin-top:3%;
+margin-bottom:12%;
+}
+
+/* Styling for input fields and textarea */
+.email-form input,
+.email-form textarea {
+    width: 100%; /* Full width of the form */
+    padding: 0.75rem; /* 12px padding relative to root font size */
+    margin: 0.625rem 0; /* 10px vertical margin */
+    border: 0.0625rem solid rgb(36, 35, 35); /* 1px border */
+    border-radius: 0.3125rem; /* 5px border-radius */
+    font-size: 1rem; /* Inherit base font size (16px) */
+    font-family: Avenir-Light;
+    justify-content: center;
+    text-align:center;
+}
+
+/* Button styling */
+.email-form button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 1rem 3rem; /* 12px top/bottom, 24px left/right */
+    cursor: pointer;
+    border-radius: 0.3125rem; /* 5px */
+    font-size: 1.5rem; /* 16px font size */
+    width: 107%; /* Full width button */
+    font-family: Avenir-Light;
+
+  
+        
+    }
+
+/* Button hover effect */
+.email-form button:hover {
+    background-color: #ececec;
+    font-family: Avenir-Light;
+    color: black;
+
+
+
+}
+
+
 
 /* Responsive text size for smaller screens */
 @media (max-width: 768px) {
     h1 {
         font-size: 2em;
        text-align: center;
-       margin-top:100%;
+       margin-top:162%;
+       margin-right: 0%;
     }
-     h3 {
-        font-size: 2em;
-        text-align: center; 
-        margin-left:30%;
-       margin-top:-17%;
-       }
+
     
     h2 {
-        font-size: 0.7em;
-        margin-top: -10%;
+        font-size: 1.2em;
+        margin-top: -5%;
         margin-right:3%;
     }
+
+    .email-form {
+        background-color: rgba(0, 36, 8, 0.411);
+        padding: 4rem; /* Padding relative to root font size */
+        border-radius: 0.625rem; /* 10px as rem */
+        box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.048); /* Relative to 16px */
+        width: 80%; /* Use percentage to adapt to screen width */
+        max-width: 25rem; /* Maximum width of 400px to keep form from getting too wide */
+    margin-top:13%;
+    margin-bottom: 85%;
+}
+body {
+    align-items: top;
+    justify-content: center;
+    margin-top: 25%;
+}
 }
