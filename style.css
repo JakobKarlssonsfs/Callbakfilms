@@ -102,6 +102,26 @@ font-family: 'Avenir-Light';
 
 }
 
+@media (max-width: 1100px) {
+
+nav ul li {
+         
+    margin-bottom:2%;
+}
+video { 
+  background-size: cover;
+}
+@media (max-width: 376px) {
+  nav ul li {  
+    margin-top:1em;
+  }
+
+  video {
+
+    background-size: cover;
+  }
+}
+
 @media (max-width: 768px) {
 
 
@@ -115,7 +135,7 @@ video {
   position:center;
   overflow:hidden;
   object-fit: cover;
-
+  background-size: cover;
 }
 
 .cblogowhite img{
@@ -177,4 +197,6 @@ body {
 
  }
 
+
+}
 }
