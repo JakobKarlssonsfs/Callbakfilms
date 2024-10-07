@@ -1,15 +1,33 @@
 
 
+html, body {
+   margin:0%;
+   padding: 0;
+   height: 100%; 
+   overflow: hidden;
+}
 
-.logoenter { width: 15%;
-height: auto;
-   margin-left: 0%;
-   margin-top: 10%;
-   align-items: center;
-   justify-content: center;
-gap:3rem;
-    border-radius: 50%; /* Make the image circular */
-    padding: 1% 2%;
-    margin-top:0%;
+.background-image {
+   background-image:url('https://raw.githubusercontent.com/JakobKarlssonsfs/Callbakfilms/main/resrain.png');
+   background-position-x: center;
+   background-position-y: center;
+   background-size: cover;
+   height: 100vh;
+   width: 100%;
+   position: absolute;
+   object-fit: cover;
+   overflow:hidden;
+z-index: -1;
 
-           }
+
+}
+
+p {
+
+
+color:white;
+font-family: Avenir-Light;
+font-size: 3em;
+justify-content: center;
+text-align: center;
+}
