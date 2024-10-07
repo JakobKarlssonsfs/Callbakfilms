@@ -48,7 +48,7 @@
 
 }
 
-.logoenter { width: 50%;
+.logoenter { width: 70%;
     height: auto;
        margin-left: 0%;
        
@@ -57,7 +57,7 @@
     gap:3rem;
         border-radius: 50%; /* Make the image circular */
         padding: 1% 1%;
-        margin-top:13.5%;
+        margin-top:10%;
     
                }
     
