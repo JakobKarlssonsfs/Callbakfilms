@@ -61,7 +61,7 @@ justify-content: center;
     box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.048); /* Relative to 16px */
     width: 100%; /* Use percentage to adapt to screen width */
     max-width: 40rem; /* Maximum width of 400px to keep form from getting too wide */
-margin-top:15.2%;
+margin-top:13%;
 margin-left:7%;
 
 }
@@ -110,69 +110,6 @@ margin-left:7%;
 
 
 /* Responsive text size for smaller screens */
-
-@media (max-width: 376px) {
-    h1 {
-        font-size: 2em;
-       text-align: center;
-       margin-top:10%;
-       margin-right: 0%;
-    }
-
-    
-    h2 {
-        font-size: 1.2em;
-        margin-top: 0%;
-        margin-right:3%;
-    }
-
-    .email-form {
-        
-        padding: 4rem; /* Padding relative to root font size */
-        border-radius: 0.625rem; /* 10px as rem */
-        box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.048); /* Relative to 16px */
-        width: 80%; /* Use percentage to adapt to screen width */
-        max-width: 25rem; /* Maximum width of 400px to keep form from getting too wide */
-    margin-top:39%;
-    margin-bottom: 85%;
-}
-
-.email-form input,
-.email-form textarea {
-    background-color: black;
-    width: 80%; /* Full width of the form */
-    padding: 0.5rem; /* 12px padding relative to root font size */
-    margin: 0.1rem 0; /* 10px vertical margin */
-    border: 0.1rem solid rgb(36, 35, 35); /* 1px border */
-    border-radius: 0.3125rem; /* 5px border-radius */
-    font-size: 1.2rem; /* Inherit base font size (16px) */
-    font-family: Avenir-Light;
-    justify-content: center;
-    text-align:center;
-    color:white
-}
-
-.email-form button {
-    background-color: #000000;
-    color: rgb(97, 97, 97);
-    border: none;
-    padding: 0.5rem 3rem; /* 12px top/bottom, 24px left/right */
-    cursor: pointer;
-    border-radius: 0.2rem; /* 5px */
-    font-size: 1.2rem; /* 16px font size */
-    width: 88%; /* Full width button */
-    font-family: Avenir-Light;
-
-  
-        
-    }
-body {
-    align-items: top;
-    justify-content: center;
-    
-}
-}
-
 @media (max-width: 417px) {
     h1 {
         font-size: 2em;
@@ -196,14 +133,14 @@ body {
         width: 80%; /* Use percentage to adapt to screen width */
         max-width: 25rem; /* Maximum width of 400px to keep form from getting too wide */
     margin-top:55%;
-    margin-right: 10%;
+    margin-right: 48%;
    
 }
 
 .email-form input,
 .email-form textarea {
     background-color: black;
-    width: 100%; /* Full width of the form */
+    width: 194%; /* Full width of the form */
     padding: 0.5rem; /* 12px padding relative to root font size */
     margin: 0.1rem 0; /* 10px vertical margin */
     border: 0.1rem solid rgb(36, 35, 35); /* 1px border */
@@ -219,14 +156,77 @@ body {
     background-color: #000000;
     color: rgb(97, 97, 97);
     border: none;
-    padding: 0.5rem 3rem; /* 12px top/bottom, 24px left/right */
+    padding: 1.3rem 3rem; /* 12px top/bottom, 24px left/right */
     cursor: pointer;
     border-radius: 0.2rem; /* 5px */
     font-size: 1.2rem; /* 16px font size */
-    width: 107%; /* Full width button */
+    width: 205.5%; /* Full width button */
     font-family: Avenir-Light;
 
   
     
 }
 }
+@media (max-width: 376px) {
+    h1 {
+        font-size: 2em;
+       text-align: center;
+       margin-top:10%;
+       margin-right: 0%;
+    }
+
+    
+    h2 {
+        font-size: 1.2em;
+        margin-top: 0%;
+        margin-right:3%;
+    }
+
+    .email-form {
+        
+        padding: 4rem; /* Padding relative to root font size */
+        border-radius: 0.625rem; /* 10px as rem */
+        box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.048); /* Relative to 16px */
+        width: 100%; /* Use percentage to adapt to screen width */
+        max-width: 25rem; /* Maximum width of 400px to keep form from getting too wide */
+    margin-top:39%;
+    margin-bottom: 85%;
+    margin-right: 30%;
+}
+
+.email-form input,
+.email-form textarea {
+    background-color: black;
+    width: 143%; /* Full width of the form */
+    padding: 0.5rem; /* 12px padding relative to root font size */
+    margin: 0.1rem 0; /* 10px vertical margin */
+    border: 0.1rem solid rgb(36, 35, 35); /* 1px border */
+    border-radius: 0.3125rem; /* 5px border-radius */
+    font-size: 1.2rem; /* Inherit base font size (16px) */
+    font-family: Avenir-Light;
+    justify-content: center;
+    text-align:center;
+    color:white;
+    
+
+}
+
+.email-form button {
+    background-color: #000000;
+    color: rgb(97, 97, 97);
+    border: none;
+    padding: 0.5rem 3rem; /* 12px top/bottom, 24px left/right */
+    cursor: pointer;
+    border-radius: 0.2rem; /* 5px */
+    font-size: 1.2rem; /* 16px font size */
+    width: 155%; /* Full width button */
+    font-family: Avenir-Light;
+
+  
+        
+
+    
+}
+}
+
+
