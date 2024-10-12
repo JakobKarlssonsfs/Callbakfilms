@@ -41,7 +41,7 @@
 
 .page h1 {
 
-    margin-top: 12%;
+    margin-top: 9%;
     font-size: 3em;
     font-family: Avenir-Light;
 
@@ -58,63 +58,15 @@
 .epage {
     background-image:url('https://raw.githubusercontent.com/JakobKarlssonsfs/Callbakfilms/main/handkerchief.png');
             height: 100vh; /* Full viewport height */
-            width: 100%;
-       
-            object-fit: cover;
-        
+            width:100%;
+       background-position:top;
+        object-fit: cover;
             text-align: center;
             overflow:hidden;
         font-family: Avenir-Light;
        
     }
 
-.pagee {
-background-image:url('https://raw.githubusercontent.com/JakobKarlssonsfs/Callbakfilms/main/handkerchief.png');
-background-attachment:scroll ;
-background-position:center;
-height:100vh;
-
-height: 100vh; /* Full viewport height */
-width: 100%;
-
-
-color: rgb(255, 255, 255);
-text-align: center;
-font-size: 1,5em;
-font-family: Avenir-Light;
-overflow: hidden;
-
-z-index:-1;
-background-size: cover;
-}
-
-    /* Left and right sections */
-.profile-pic1 {
-    margin-left: 0%;
-    margin-top: 2%;
-    width: 15%; 
-    height: auto;
-   
-    justify-content: center;
-    border-radius: 50%; /* Make the image circular */
-    align-items: center;
-
-
-}
-
- .profile-pic2 {
-    width: 15%;
-height: auto;
-   margin-left: 0%;
-   margin-top: 10%;
-   align-items: center;
-   justify-content: center;
-gap:3rem;
-    border-radius: 50%; /* Make the image circular */
-    padding: 1% 2%;
-    margin-top:0%;
-
-}
 
 #page0 {
 background-size: cover;
@@ -123,306 +75,126 @@ background-size: cover;
     align-items: center;
 }
 
-#page1, #page2, #page3, #page4, #page5{
-
-background-size: 270em;
-}
 
 
-.pp {
 
-    font-family: Avenir-Light;
-font-size: 2em;
-    color: rgb(223, 223, 223);
-    background-color: rgb(0, 0, 0);
-    text-align: center;
-    font-size: 1.5em;
-    z-index:1;
-   display: flex;
-  gap: 6em;
-  margin-left:2%;
-margin-top:30%;
-  justify-content: center;
-
-}
-.prole {
-
-    font-family: Avenir-medium;
-font-size: 2em;
-    color: rgb(75, 0, 0);
-    background-color: rgba(219, 219, 219, 0.774);
-    text-align: center;
-    font-size: 1em;
-    z-index:1;
-   display: flex;
-  gap: 10.5em;
-  width: 100%;
-  
-  
-
-  justify-content: center;
-
-}
-
-.prc {
-
-    font-family: Avenir-Light;
-font-size: 2em;
-    color: rgb(238, 238, 238);
-    text-align: center;
-    font-size: 1,5em;
-    z-index:1;
+body {
+    display: flex;
     justify-content: center;
-  
-  
-}
-
-.presentation-box {
-
-        background-color: #222222be; /* Light background */
-        padding: 2rem; /* Padding around the text */
-        border-radius: 10px; /* Rounded corners */
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-        max-width: 600px; /* Maximum width of the box */
-        margin: 2rem auto; /* Center the box horizontally */
-        font-family: 'Arial', sans-serif;
-        color: rgb(194, 194, 194);
-    }
-
-.presentation-box p {
-
-    font-family: Avenir-Light;
-    font-size: 1em;
-}
-
-.pjk {
-   
     align-items: center;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: 2em;
-    font-family: Avenir-Light;
-    z-index:1;
+    flex-direction: column;
+
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
-
-.ppm {
-
-    font-family: Avenir-Light;
-font-size: 2em;
-    color: rgb(250, 250, 250);
-    text-align: center;
-    z-index:1;
+.image-container {
+    position: relative;
+    margin: 15px;
 }
 
-.pas {
-
-    font-family: Avenir-Light;
-font-size: 2em;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    z-index:1;
+.hover-image {
+    width: 9rem;
+    height: auto;
+    border-radius: 5px;
+    margin-top:5%;
 }
 
-.pml {
-
-    font-family: Avenir-Light;
-font-size: 2em;
-    color: rgb(255, 255, 255);
+.textbox {
+    position: fixed; /* Fix the position to the viewport */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset by 50% of the element's height and width */
+    pointer-events: none;
+    background-color: rgb(71, 2, 2);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
     text-align: center;
-    z-index:1;
-   
+
+    width: 40%; /* Adjust width for the textbox */
+    font-size: 1em; /* Font size */
+    word-wrap: break-word;
+    max-height: 100vh; /* Max height for overflow */
+    overflow-y: auto; /* Scroll if content exceeds the height */
+    z-index: 10; /* Ensure textbox is on top */
+  
+}
+
+.image-container:hover .textbox {
+    opacity: 1;
+    pointer-events: auto; /* Allow interaction when visible */
+}
+
+.name-tag, .role-tag {
+    color: white;
+}
+
+.textbox p {
+
+    margin-bottom: 5%;
 }
 
 /* Responsive text size for smaller screens */
 
-@media (max-width: 1100px) {
+@media (max-width: 417px) {
 
-
+    
     .page h1{
-        font-size: 3em;
-        margin-top:19.5%;
+          font-size: 2em;
+          margin-top:49.5%;
+      }
+      .page h2 {
+          font-size: 2em;
+          margin-top:95%;
+      }
+      .textbox {
+        width: 70%;
+        font-size: 0.7em;
     }
-    .page h2 {
-        font-size: 3em;
-        margin-top:40%;
-    }
+
+.hover-image {
+    width: 6.5rem;
+    height: auto;
+    border-radius: 5px;
+    margin-top:40%;
 }
-
-
-
+  
+} 
 
 @media (max-width: 376px) {
 
     
   .page h1{
         font-size: 2em;
-        margin-top:31%;
+        margin-top:40%;
     }
     .page h2 {
         font-size: 2em;
-        margin-top:95%;
+        margin-top:75%;
     }
-
-    .profile-pic1 {
-       
-        margin-top: 5%;
-        width: 25%; 
-
-        height: auto;
-       
-        justify-content: center;
-        border-radius: 50%; /* Make the image circular */
-        align-items: center;
-    
-    }
-    
-    .profile-pic2 {
-       
-        margin-top: 5%;
-        width: 25%; 
-
-        height: auto;
-       
-        justify-content: center;
-        border-radius: 50%; /* Make the image circular */
-        align-items: center;
-    }
-
-    .pp {
-
-        font-family: Avenir-Light;
-    font-size: 2em;
-        color: rgb(223, 223, 223);
-        background-color: rgb(0, 0, 0);
-        text-align: center;
+    .textbox {
+        width: 70%;
         font-size: 0.7em;
-        z-index:1;
-       display: flex;
-      gap: 0.8em;
-      margin-left:2%;
-    margin-top:70%;
-      justify-content: center;
-    
-    }
-    .prole {
-    
-        font-family: Avenir-medium;
-    font-size: 2em;
-        color: rgb(75, 0, 0);
-        background-color: rgba(219, 219, 219, 0.774);
-        text-align: center;
-        font-size: 0.6em;
-        z-index:1;
-       display: flex;
-      gap: 1.5em;
-      width: 100%;
-    }
-    .presentation-box {
-
-        background-color: #222222be; /* Light background */
-        padding: 2rem; /* Padding around the text */
-        border-radius: 10px; /* Rounded corners */
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-        max-width: 600px; /* Maximum width of the box */
-        margin: 2rem auto; /* Center the box horizontally */
-        font-family: 'Arial', sans-serif;
-        color: rgb(194, 194, 194);
     }
 
-.presentation-box p {
-
-    font-family: Avenir-Light;
-    font-size: 0.7em;
-}
-    
+.hover-image {
+    width: 6.5rem;
+    height: auto;
+    border-radius: 5px;
+    margin-top:20%;
 }
 
-@media (max-width: 500px) {
+}
 
-    
-    .page h1{
-          font-size: 2em;
-          margin-top:48%;
-      }
-      .page h2 {
-          font-size: 2em;
-          margin-top:95%;
-      }
-  
-      .profile-pic1 {
-         
-          margin-top: 5%;
-          width: 25%; 
-  
-          height: auto;
-         
-          justify-content: center;
-          border-radius: 50%; /* Make the image circular */
-          align-items: center;
+   
       
-      }
-      
-      .profile-pic2 {
-         
-          margin-top: 5%;
-          width: 25%; 
-  
-          height: auto;
-         
-          justify-content: center;
-          border-radius: 50%; /* Make the image circular */
-          align-items: center;
-      }
-  
-      .pp {
-  
-          font-family: Avenir-Light;
-      font-size: 2em;
-          color: rgb(223, 223, 223);
-          background-color: rgb(0, 0, 0);
-          text-align: center;
-          font-size: 0.7em;
-          z-index:1;
-         display: flex;
-        gap: 0.8em;
-        margin-left:2%;
-      margin-top:95%;
-        justify-content: center;
-      
-      }
-      .prole {
-      
-          font-family: Avenir-medium;
-      font-size: 2em;
-          color: rgb(75, 0, 0);
-          background-color: rgba(219, 219, 219, 0.774);
-          text-align: center;
-          font-size: 0.6em;
-          z-index:1;
-         display: flex;
-        gap: 1.5em;
-        width: 100%;
-      }
-      .presentation-box {
-  
-          background-color: #222222be; /* Light background */
-          padding: 2rem; /* Padding around the text */
-          border-radius: 10px; /* Rounded corners */
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-          max-width: 600px; /* Maximum width of the box */
-          margin: 2rem auto; /* Center the box horizontally */
-          font-family: 'Arial', sans-serif;
-          color: rgb(194, 194, 194);
-          margin-top:30%;
-      }
-  
-  .presentation-box p {
-  
-      font-family: Avenir-Light;
-      font-size: 0.7em;
-  }
-      
-  }
   
