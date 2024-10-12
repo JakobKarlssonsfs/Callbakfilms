@@ -30,23 +30,6 @@ overflow: hidden;
     
 }
 
-.cblogoblack img  {
-position:absolute;
-top:2%;
-left:1%;
-width: 10%;
-align-items: center;
-justify-content: center;
-}
-
-.cblogowhite img  {
-  position:absolute;
-  top:83%;
-  left:89%;
-  width: 10%;
-  align-items: center;
-  justify-content: center;
-  }
 
 @font-face {
   font-family: 'Avenir-Medium';
@@ -66,55 +49,59 @@ justify-content: center;
 }
 
 
-nav ul {
-text-align: center;
-list-style: none;
-font-size: 2em;
-padding: 0% 2.5em;
-z-index: 1;
-position:center;
-
-
-}
-
-nav ul li a:hover {
-color: rgb(95, 95, 95); /* Change color on hover */
-}
-
-nav ul li {
-display: inline-block; /* Display items inline */
-margin-right: 9%; /* Space between the menu items */
-margin-top:28%;
-}
-
-nav ul li:last-child {
-margin-right: 0; /* Remove margin for the last item */
-}
-
-/* Style the links */
-nav ul li a {
-color:rgb(255, 255, 255);
-text-decoration: none; /* Remove underline */
-
-font-family: 'Avenir-Light';
+nav .logoenter { width: 100%;
+  height: auto;
+    
+     
+     align-items: center;
+     justify-content: center;
+      border-radius: 50%; /* Make the image circular */
+      padding: 1% 1%;
+      margin-top:4%;
+  
+             }
+  
 
 
 
-}
 
-@media (max-width: 1100px) {
+@media (max-width: 417px) {
 
-nav ul li {
-         
-    margin-bottom:2%;
-}
+
+  nav .logoenter { width: 100%;
+    height: auto;
+      
+       
+       align-items: center;
+       justify-content: center;
+        border-radius: 50%; /* Make the image circular */
+        padding: 1% 1%;
+        margin-top:75%;
+    
+               }
+
+
 video { 
   background-size: cover;
 }
 @media (max-width: 376px) {
-  nav ul li {  
-    margin-top:1em;
-  }
+
+  nav .logoenter { width: 100%;
+    height: auto;
+      
+       
+       align-items: center;
+       justify-content: center;
+        border-radius: 50%; /* Make the image circular */
+        padding: 1% 1%;
+        margin-top:55%;
+        
+        overflow: hidden;
+        object-fit: cover;
+        background-size: contain;
+    
+               }
+
 
   video {
 
@@ -138,62 +125,12 @@ video {
   background-size: cover;
 }
 
-.cblogowhite img{
-position:absolute;
-top:10%;
-left:34.2%;
-width: 30%;
-  
-  }
-
-  .cblogoblack img{
-    position:absolute;
-    top:75%;
-    left:34.2%;
-    width: 30%;
-      
-      }
-
-       nav ul li a {
-             
-            
-              font-size: 0.8em;
-              text-align: center;
-              justify-content: center;
-              position: relative;
-              
-       }
-            
-       nav ul {
-         margin-top:50%;
-         padding: 1% 2.5em;
-         text-align: center;
-         justify-content: center;
-        
-list-style: none;
-       }
-
-       nav ul li {
-         
-         margin-right:2%;
-       }
 body { 
   color:black;
 
 
 
 
- }
-
- .logo {
-
-
-  width: 100%;
-    height: 100wv;
-    max-width: 100%;
-    position:center;
-      overflow: hidden;
-      object-fit: cover;
 
  }
 
