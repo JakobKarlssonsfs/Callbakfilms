@@ -8,7 +8,7 @@ html, body {
 }
 
 .background-image {
-   background-image:url('https://raw.githubusercontent.com/JakobKarlssonsfs/Callbakfilms/main/resrain.png');
+   background-image:url('https://raw.githubusercontent.com/JakobKarlssonsfs/Callbakfilms/main/handkerchief.png');
    background-position-x: center;
    background-position-y: center;
    background-size: cover;
@@ -22,7 +22,46 @@ z-index: -1;
 
 }
 
+nav ul {
+   text-align: center;
+   justify-content: center;
+   list-style:none;
+   font-size: 2em;
+   padding: 0% 2.5em;
+   z-index: 1;
+   position:center;
+      display: flex;
+      flex-direction: column;
+      margin-top:20%;
+   
+    
+   }
+    
+   
+   nav ul li a:hover {
+   color: rgb(95, 95, 95); /* Change color on hover */
+   }
+   
+   nav ul li {
+   display: inline-block; /* Display items inline */
+   margin-right: 0%; /* Space between the menu items */
+   margin:2%;
+   
+   }
+   
+   
+   /* Style the links */
+   nav ul li a {
+   color:rgb(255, 255, 255);
+   text-decoration: none; /* Remove underline */
+   font-family: 'Avenir-Light';
+   
+   
+   
+   }
+
 p {
+
 
 
 color:white;
@@ -30,4 +69,64 @@ font-family: Avenir-Light;
 font-size: 3em;
 justify-content: center;
 text-align: center;
+}
+
+@media (max-width: 417px) {
+   nav ul {
+      margin-top:80%;
+      text-align: center;
+      justify-content: center;
+   }
+   
+      nav ul li { 
+        
+      
+      line-height: 2;
+      
+   }
+      nav ul li a {
+         font-size: 0.7em; 
+        
+     
+   }
+   @media (max-width: 391px) {
+      nav ul {
+         margin-top:80%;
+         text-align: center;
+         justify-content: center;
+      }
+      
+         nav ul li { 
+           
+         
+         line-height: 2;
+         
+      }
+         nav ul li a {
+            font-size: 0.6em; 
+           
+        
+      }
+
+@media (max-width: 376px) {
+nav ul {
+   margin-top:60%;
+   text-align: center;
+   justify-content: center;
+}
+
+   nav ul li { 
+     
+   
+   line-height: 2;
+   
+}
+   nav ul li a {
+      font-size: 0.5em; 
+     
+  
+
+}
+}
+}
 }
