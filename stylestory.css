@@ -90,28 +90,31 @@ body {
 
 .gallery {
     display: flex;
-    flex-wrap: wrap;
+    
     justify-content: center;
 }
 
 .image-container {
     position: relative;
-    margin: 15px;
+    margin: 2rem;
 }
 
 .hover-image {
     width: 9rem;
     height: auto;
     border-radius: 5px;
-    margin-top:5%;
+    margin-top:0%;
 }
 
 .textbox {
-    position: fixed; /* Fix the position to the viewport */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Offset by 50% of the element's height and width */
-    pointer-events: none;
+    position:fixed; /* Fix the position to the viewport */
+     /* Center horizontally */
+    transform: translateY(-10px);
+    transform: translate(-50%, -50%);
+   top:40%;
+   left:50%;
+   transform: translateX(-50%) translateY(-10px);
+   pointer-events: none;
     background-color: rgb(71, 2, 2);
     color: #fff;
     padding: 1rem;
@@ -119,29 +122,44 @@ body {
     opacity: 0;
     transition: opacity 0.3s ease;
     text-align: center;
-
-    width: 40%; /* Adjust width for the textbox */
+    font-family: Avenir-Light;
+    width: 50%; /* Adjust width for the textbox */
     font-size: 1em; /* Font size */
     word-wrap: break-word;
-    max-height: 100vh; /* Max height for overflow */
+    max-height: 65vh; /* Max height for overflow */
     overflow-y: auto; /* Scroll if content exceeds the height */
     z-index: 10; /* Ensure textbox is on top */
   
 }
 
-.image-container:hover .textbox {
-    opacity: 1;
-    pointer-events: auto; /* Allow interaction when visible */
+.textbox.visible {
+    opacity: 1; /* Make the text box visible */
+    transform: translateX(-50%) translateY(0);
+    pointer-events: auto;
 }
 
 .name-tag, .role-tag {
     color: white;
+    font-family: Avenir-Light;
 }
 
 .textbox p {
 
     margin-bottom: 5%;
 }
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    cursor:pointer;
+}
+
+.close-btn:hover {
+    color: rgb(250, 250, 250); /* Change color on hover for better UX */
+}
+
 
 /* Responsive text size for smaller screens */
 
