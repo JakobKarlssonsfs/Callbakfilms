@@ -44,6 +44,7 @@
     margin-top: 9%;
     font-size: 3em;
     font-family: Avenir-Light;
+    color:rgb(255, 255, 255);
 
 }
 
@@ -56,14 +57,15 @@
 }
 
 .epage {
-    background-image:url('https://raw.githubusercontent.com/JakobKarlssonsfs/Callbakfilms/main/handkerchief.png');
+    background-image:url('https://raw.githubusercontent.com/JakobKarlssonsfs/Callbakfilms/main/freedome.png');
             height: 100vh; /* Full viewport height */
             width:100%;
-       background-position:center;
+       background-position:top;
         object-fit: cover;
             text-align: center;
             overflow:hidden;
         font-family: Avenir-Light;
+    
        
     }
 
@@ -84,7 +86,7 @@ body {
     align-items: center;
     flex-direction: column;
 
-    background-color: #f0f0f0;
+    background-color: #000000;
     margin: 0;
 }
 
@@ -96,7 +98,9 @@ body {
 
 .image-container {
     position: relative;
+    display: inline-block;
     margin: 2rem;
+    
 }
 
 .hover-image {
@@ -129,37 +133,38 @@ body {
     max-height: 65vh; /* Max height for overflow */
     overflow-y: auto; /* Scroll if content exceeds the height */
     z-index: 10; /* Ensure textbox is on top */
-  
 }
 
 .textbox.visible {
     opacity: 1; /* Make the text box visible */
-    transform: translateX(-50%) translateY(0);
-    pointer-events: auto;
+    transform: translateX(-50%) translateY(0); /* Moves the box to its visible position */
+    pointer-events: auto; /* Allow interaction */
+
+}
+
+/* Close button style */
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: red; /* Change color on hover */
 }
 
 .name-tag, .role-tag {
-    color: white;
-    font-family: Avenir-Light;
+    color: rgb(255, 255, 255);
+    font-family: Avenir-medium;
 }
 
 .textbox p {
 
     margin-bottom: 5%;
 }
-.close-btn {
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-    cursor:pointer;
-}
-
-.close-btn:hover {
-    color: rgb(250, 250, 250); /* Change color on hover for better UX */
-}
-
 
 /* Responsive text size for smaller screens */
 
@@ -214,7 +219,7 @@ body {
     }
     .page h2 {
         font-size: 1em;
-        margin-top:75%;
+        margin-top:83%;
     }
     .textbox {
         width: 70%;
