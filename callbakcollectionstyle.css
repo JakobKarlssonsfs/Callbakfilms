@@ -24,6 +24,12 @@
 
 }
 
+iframe p {
+    color: white; 
+    font-size: 2em;
+    font-family:Avenir-Light;
+}
+
 h1 {
 color: rgb(250, 250, 250);
 font-family:Avenir-Light;
@@ -69,13 +75,13 @@ body {
   }
   .toggle-buttons span {
     cursor: pointer;
-    color: rgb(192, 192, 192);
+    color: rgb(255, 255, 255);
     font-size: 18px;
     font-family: Avenir-Light;
   }
   
   .toggle-buttons span:hover {
-    color: #ffffff;
+    color: #c5c5c5;
     
   }
   
@@ -104,6 +110,16 @@ body {
     object-fit: cover;
   }
   
+  .video-item {
+    text-align: center;
+}
+
+.video-title {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    font-family: Avenir-Light;
+}
   /* Home link styling */
   .home-link {
     color: rgb(0, 0, 0);
@@ -126,6 +142,11 @@ body {
         margin-bottom:3%;
     }
 
+    iframe p {
+        color: white; 
+        font-size: 0.6em;
+        font-family:Avenir-Light;
+    }
     h1 {
 
         font-size: 1em; 
@@ -142,7 +163,7 @@ body {
                     margin:1em;
                 }
                 .toggle-buttons span {
-                    font-size: 0.5rem;
+                    font-size: 1rem;
                   }
                   .grid {
                     display: grid;
@@ -151,6 +172,9 @@ body {
                 
 max-height: 100vh;
                   }
+                  .video-title {
+                    font-size: 0.7em;
+                  }
                   .photo {
                     overflow: hidden;
                   }
@@ -158,33 +182,8 @@ max-height: 100vh;
 }
 
 @media (max-width: 376px) {
-    .logoenter { width: 120%;
-        height: auto;
-           margin-left: -10%;
-           
-           align-items: center;
-           justify-content: center;
-        gap:3rem;
-            border-radius: 50%; /* Make the image circular */
-            padding: 1% 1%;
-            margin-top:56%;
-        
-                   }
-
-}
-
-@media (max-width: 1000px) {
-    .logoenter { width: 120%;
-        height: auto;
-           margin-left: -10%;
-           
-           align-items: center;
-           justify-content: center;
-        gap:3rem;
-            border-radius: 50%; /* Make the image circular */
-            padding: 1% 1%;
-            margin-top:15%;
-        
-                   }
+    .grid {
+        margin-top:30%;
+    }
 
 }
