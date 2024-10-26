@@ -218,7 +218,10 @@ margin-left:9%;
 }
 #message {
     max-width: 30rem;
-}
+        min-height: 35vh;
+            height: 35vh;
+        }
+
 
 }
 @media (max-width: 376px) {
@@ -270,11 +273,12 @@ margin-left:9%;
     font-size: 1.2rem; /* 16px font size */
     width: 205%; /* Full width button */
     font-family: Avenir-Light;
-
-  
-        
-
     
+}
+
+#message {
+min-height: 35vh;
+    height: 35vh;
 }
 }
 
