@@ -1,59 +1,189 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="callbakcollectionstyle.css">
 
-<title>Callbak Films</title>
-
-    </head>
-
-<body>
-   
-      
-    <header class="header">
-        <a href="freedome.html" class="home-link">HOME</a>
-        <a href="callbakcollection.html" class="home-link">NARRATIVE</a>
-        <a href="reach.html" class="home-link">REACH</a>
-        <a href="story.html" class="home-link">US</a>
-      </header>
+@font-face {
+    font-family: 'Avenir-Medium';
+    src: url('/Fonts/Avenir-Medium.woff2') format('woff2'),
+         url('/Fonts/Avenir-medium.woff') format('woff'),
+         url('Fonts/Avenir-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
     
-            <div class="toggle-buttons">
-                <span data-target="photos">STORY</span> |
-    <span data-target="videos">ART</span>
-              </div>
-              <section id="videos" class="gallery-section" data-section="videos">
-                <h2>Video Gallery</h2>
-                <div class="grid">
-                  <iframe src="https://www.youtube.com/embed/JmIQHYzvdCY?modestbranding=1&rel=0&showinfo=0&" title="YouTube video 1" allowfullscreen></iframe>
-                  <iframe src="https://www.youtube.com/embed/ixBz8ow9Zx4?modestbranding=1&rel=0&showinfo=0" title="YouTube video 2" allowfullscreen></iframe>
-                  <iframe src="https://www.youtube.com/embed/ykNjGrjoY0?modestbranding=1&rel=0&showinfo=0" title="YouTube video 3" allowfullscreen></iframe>
-                  <!-- Add more videos as needed -->
-                </div>
-              </section>
-           
-              <section id="photos" class="gallery-section active" data-section="photos">
-                <div class="grid">
-                  <div class="photo"><img src="resrain.png" alt="Photo 1"></div>
-                  <div class="photo"><img src="barcodegold.png" alt="Photo 2"></div>
-                  <div class="photo"><img src="redwater.jpg" alt="Photo 3"></div>
-                  <div class="photo"><img src="redmarble.png" alt="Photo 4"></div>
-                  <div class="photo"><img src="enter.png" alt="Photo 5"></div>
-                  <div class="photo"><img src="story.jpg" alt="Photo 6"></div>
-                  <div class="photo"><img src="21.png" alt="Photo 7"></div>
-                  <div class="photo"><img src="11doux.png" alt="Photo 8"></div>
-                  <div class="photo"><img src="mclips.png" alt="Photo 9"></div>
-                  <div class="photo"><img src="cbpill.png" alt="Photo 10"></div>
-                  <!-- Add more photos as needed -->
-                </div>
-              </section>
-            
-              <script src="narrativescript.js"></script>
+    font-family: 'Avenir-Light';
+    src: url('/Fonts/Avenir-Light.woff2') format('woff2'),
+         url('/Fonts/Avenir-Light.woff') format('woff'),
+         url('/Fonts/Avenir-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 
-            
-        <!-- First page with no text, just the background image -->
 
-</body>
+}
 
-</html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+iframe p {
+    color: white; 
+    font-size: 2em;
+    font-family:Avenir-Light;
+}
+
+h1 {
+color: rgb(250, 250, 250);
+font-family:Avenir-Light;
+align-items: center;
+color: white;
+text-align: center;
+font-size: 1.8em;
+z-index:1;
+margin-top: 15%;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    background-color: #000000; /* Light background color */
+    margin: 0;
+    padding: 20px;
+}
+.header {
+    position: fixed;
+    top:0%;
+    left:0%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 1em 0;
+    text-align: center;
+    justify-content: center;
+    z-index: 1000;
+      
+  }
+  .toggle-buttons {
+      position: fixed;
+        display: flex;
+        top:10%;
+        justify-content: center;
+        align-items: center;
+        margin: 0em 0;
+        gap:1em;
+        font-size: 18px;
+  }
+  .toggle-buttons span {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-family: Avenir-Light;
+  }
+  
+  .toggle-buttons span:hover {
+    color: #c5c5c5;
+    
+  }
+  
+  /* Common styling for gallery sections */
+  .gallery-section.active {
+    display: none; /* Hide sections by default */
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .gallery-section {
+    display: block; /* Show the active section */
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive layout */
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .grid img, .grid iframe {
+    width: 100%;
+    aspect-ratio: 16/9; /* Consistent ratio for photos and videos */
+    object-fit: cover;
+  }
+  
+  .video-item {
+    text-align: center;
+}
+
+.video-title {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    font-family: Avenir-Light;
+}
+  /* Home link styling */
+  .home-link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1em;
+    font-family: Avenir-Light;
+    margin:3em;
+  }
+  
+  .home-link:hover {
+    color:grey;
+  }
+/* Responsive text size for smaller screens */
+@media (max-width: 768px) {
+   
+    
+    #page1 {
+        background-size:65rem;
+
+        margin-bottom:3%;
+    }
+
+    iframe p {
+        color: white; 
+        font-size: 0.6em;
+        font-family:Avenir-Light;
+    }
+    h1 {
+
+        font-size: 1em; 
+        margin-top:40%;
+        font-family: Avenir-Light;
+    }
+        
+                   
+                   .home-link {
+                    color: rgb(0, 0, 0);
+                    text-decoration: none;
+                    font-size: 1em;
+                    font-family: Avenir-Light;
+                    margin:1em;
+                }
+                .toggle-buttons span {
+                    font-size: 1rem;
+                  }
+                  .grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* Adjust size */
+                    gap: 20px; /* Space between grid items */
+                
+max-height: 100vh;
+                  }
+                  .video-title {
+                    font-size: 0.7em;
+                  }
+                  .photo {
+                    overflow: hidden;
+                  }
+                
+}
+
+@media (max-width: 376px) {
+    .grid {
+        margin-top:30%;
+    }
+
+}
