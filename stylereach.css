@@ -7,10 +7,10 @@ html, body {
 }
 
 .background-image {
-    background-image:url('https://raw.githubusercontent.com/JakobKarlssonsfs/Callbakfilms/main/barcodeeagle.png');
+    background-color:rgb(0, 0, 0);
     background-position-x:top;
     background-position-y:center;
-    background-size:cover;
+    background-size:240em;
     height: 100vh;
     width: 100%;
     position: absolute;
@@ -20,12 +20,21 @@ z-index: -1;
 
 
 }
+#callbak{
+   color:white;
+   text-decoration: none; /* Remove underline */
+   font-family: 'Avenir-Light';
+   position:absolute;
+  left:48.5%;
+  top:8%;
+  font-size: 0.7em;
+}
 
 h1 {
 
    justify-content: center;
     text-align:center;
-    color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
     font-family: Avenir-Light;
     font-size: 2.5em;
     margin-top:12%;
@@ -39,7 +48,7 @@ h1 {
 h2 {
    justify-content: center;
     text-align:center;
-    color:rgb(212, 212, 212);
+    color:rgb(0, 0, 0);
     font-family: Avenir-Light;
     z-index:1;
     margin-top:-2%;
@@ -58,34 +67,41 @@ justify-content: center;
     
     padding: 3rem; /* Padding relative to root font size */
     border-radius: 0.4rem; /* 10px as rem */
-    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.048); /* Relative to 16px */
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0); /* Relative to 16px */
     width: 100%; /* Use percentage to adapt to screen width */
     max-width: 40rem; /* Maximum width of 400px to keep form from getting too wide */
-margin-top:13%;
-margin-left:7%;
+margin-top:4%;
+margin-left:9%;
 
 }
 
 /* Styling for input fields and textarea */
 .email-form input,
 .email-form textarea {
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(255, 255, 255);
     width: 80%; /* Full width of the form */
     padding: 0.5rem; /* 12px padding relative to root font size */
     margin: 0.1rem 0; /* 10px vertical margin */
     border: 0.1rem solid rgb(0, 0, 0); /* 1px border */
     border-radius: 0.3125rem; /* 5px border-radius */
     font-size: 1rem; /* Inherit base font size (16px) */
-    font-family: Avenir-Light;
+    font-family: Avenir-Medium;
     justify-content: center;
     text-align:center;
     color:rgb(0, 0, 0)
 }
-
+#message {
+    height:50vh;
+    max-height: 50vh;
+    max-width: 80%;
+    min-width: 80%;
+    min-height: 50vh;
+    resize:none;
+}
 /* Button styling */
 .email-form button {
-    background-color: rgb(231, 231, 231);
-    color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     border: none;
     padding: 1rem 3rem; /* 12px top/bottom, 24px left/right */
     cursor: pointer;
@@ -101,12 +117,36 @@ margin-left:7%;
 /* Button hover effect */
 .email-form button:hover {
     font-family: Avenir-Light;
-    color: rgb(255, 255, 255);
+    color: rgb(126, 126, 126);
 
 
 
 }
 
+.header {
+    position: fixed;
+    top:0%;
+    left:0%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 1em 0;
+    text-align: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  /* Home link styling */
+  .home-link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1em;
+    font-family: Avenir-Light;
+    margin:3em;
+  }
+  
+  .home-link:hover {
+    color:grey;
+  }
 
 
 /* Responsive text size for smaller screens */
@@ -131,19 +171,18 @@ margin-left:7%;
 
     .email-form {
         
-        padding: 4rem; /* Padding relative to root font size */
+        padding: 1rem; /* Padding relative to root font size */
         border-radius: 0.625rem; /* 10px as rem */
-        box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.048); /* Relative to 16px */
+        box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0); /* Relative to 16px */
         width: 80%; /* Use percentage to adapt to screen width */
         max-width: 25rem; /* Maximum width of 400px to keep form from getting too wide */
-    margin-top:55%;
     margin-right: 48%;
-   
+    margin-top:30%;
 }
 
 .email-form input,
 .email-form textarea {
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(255, 255, 255);
     width: 194%; /* Full width of the form */
     padding: 0.5rem; /* 12px padding relative to root font size */
     margin: 0.1rem 0; /* 10px vertical margin */
@@ -157,19 +196,30 @@ margin-left:7%;
 }
 
 .email-form button {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     border: none;
     padding: 1.3rem 3rem; /* 12px top/bottom, 24px left/right */
     cursor: pointer;
     border-radius: 0.2rem; /* 5px */
     font-size: 1.2rem; /* 16px font size */
     width: 205.5%; /* Full width button */
-    font-family: Avenir-Light;
+    font-family: Avenir-Medium;
 
   
     
 }
+
+.home-link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1em;
+    font-family: Avenir-Light;
+    margin:1em;
+}
+#message {
+    max-width: 30rem;
+}
+
 }
 @media (max-width: 376px) {
     .background-image {
@@ -186,12 +236,12 @@ margin-left:7%;
         
         padding: 4rem; /* Padding relative to root font size */
         border-radius: 0.625rem; /* 10px as rem */
-        box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.048); /* Relative to 16px */
+        box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0); /* Relative to 16px */
         width: 100%; /* Use percentage to adapt to screen width */
         max-width: 25rem; /* Maximum width of 400px to keep form from getting too wide */
-    margin-top:39%;
+    margin-top:9%;
     margin-bottom: 85%;
-    margin-right: 52%;
+    margin-right:54%;
 }
 
 .email-form input,
@@ -212,8 +262,7 @@ margin-left:7%;
 }
 
 .email-form button {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     border: none;
     padding: 0.5rem 3rem; /* 12px top/bottom, 24px left/right */
     cursor: pointer;
