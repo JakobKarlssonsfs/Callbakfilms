@@ -24,31 +24,6 @@
 
 }
 
-
-.page {
-    
-    
-    background-attachment:scroll ;
-    background-position:center;
- height:100vh;
-
- height: 100vh; /* Full viewport height */
- width: 100%;
- 
-
- color: rgb(255, 255, 255);
- text-align: center;
- font-size: 1,5em;
- font-family: Avenir-Light;
- overflow: hidden;
- 
- z-index:-1;
- background-size: cover;
-
-
-}
-    
-
 h1 {
 color: rgb(250, 250, 250);
 font-family:Avenir-Light;
@@ -57,17 +32,90 @@ color: white;
 text-align: center;
 font-size: 1.8em;
 z-index:1;
-margin-top: 10%;
+margin-top: 15%;
 
 }
 
-#page1 {
-
-    background-color:black;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    background-color: #000000; /* Light background color */
+    margin: 0;
+    padding: 20px;
+}
+.header {
+    position: fixed;
+    top:0%;
+    left:0%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 1em 0;
+    text-align: center;
+    justify-content: center;
+    z-index: 1000;
+      
+  }
+  .toggle-buttons {
+      position: fixed;
+        display: flex;
+        top:10%;
+        justify-content: center;
+        align-items: center;
+        margin: 0em 0;
+        gap:1em;
+        font-size: 18px;
+  }
+  .toggle-buttons span {
+    cursor: pointer;
+    color: rgb(192, 192, 192);
+    font-size: 18px;
     font-family: Avenir-Light;
-}
-
-
+  }
+  
+  .toggle-buttons span:hover {
+    color: #ffffff;
+    
+  }
+  
+  /* Common styling for gallery sections */
+  .gallery-section.active {
+    display: none; /* Hide sections by default */
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .gallery-section {
+    display: block; /* Show the active section */
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive layout */
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .grid img, .grid iframe {
+    width: 100%;
+    aspect-ratio: 16/9; /* Consistent ratio for photos and videos */
+    object-fit: cover;
+  }
+  
+  /* Home link styling */
+  .home-link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1em;
+    font-family: Avenir-Light;
+    margin:3em;
+  }
+  
+  .home-link:hover {
+    color:grey;
+  }
 /* Responsive text size for smaller screens */
 @media (max-width: 768px) {
    
@@ -84,20 +132,29 @@ margin-top: 10%;
         margin-top:40%;
         font-family: Avenir-Light;
     }
-
-    .logoenter { width: 120%;
-        height: auto;
-           margin-left: -10%;
-           
-           align-items: center;
-           justify-content: center;
-        gap:3rem;
-            border-radius: 50%; /* Make the image circular */
-            padding: 1% 1%;
-            margin-top:75%;
         
-                   }
-
+                   
+                   .home-link {
+                    color: rgb(0, 0, 0);
+                    text-decoration: none;
+                    font-size: 1em;
+                    font-family: Avenir-Light;
+                    margin:1em;
+                }
+                .toggle-buttons span {
+                    font-size: 0.5rem;
+                  }
+                  .grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* Adjust size */
+                    gap: 20px; /* Space between grid items */
+                
+max-height: 100vh;
+                  }
+                  .photo {
+                    overflow: hidden;
+                  }
+                
 }
 
 @media (max-width: 376px) {
