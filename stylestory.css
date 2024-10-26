@@ -24,7 +24,7 @@
 
     
     .page {
-        background-image:url('https://raw.githubusercontent.com/JakobKarlssonsfs/Callbakfilms/main/redeyes.png');
+        background-color: black;
         height: 100vh; /* Full viewport height */
     width: 100%;
     
@@ -41,8 +41,8 @@
 
 .page h1 {
 
-    margin-top: 9%;
-    font-size: 3em;
+    margin-top: 20%;
+    font-size: 2em;
     font-family: Avenir-Light;
     color:rgb(255, 255, 255);
 
@@ -50,17 +50,18 @@
 
 .page h2 {
 
-    margin-top: 26%;
+    margin-top: 5%;
     font-size: 3em;
     font-family: Avenir-Light;
 
 }
 
 .epage {
-    background-image:url('https://raw.githubusercontent.com/JakobKarlssonsfs/Callbakfilms/main/freedome.png');
+ background-image:url('https://raw.githubusercontent.com/JakobKarlssonsfs/Callbakfilms/main/barcodegold.png');
             height: 100vh; /* Full viewport height */
             width:100%;
-       background-position:top;
+       background-position-y:-75%;
+       background-size:cover ;
         object-fit: cover;
             text-align: center;
             overflow:hidden;
@@ -104,10 +105,10 @@ body {
 }
 
 .hover-image {
-    width: 9rem;
+    width: 7rem;
     height: auto;
-    border-radius: 50%;
-    margin-top:0%;
+    
+    margin-top:-13%;
 }
 
 .textbox {
@@ -119,7 +120,7 @@ body {
    left:50%;
    transform: translateX(-50%) translateY(-10px);
    pointer-events: none;
-    background-color: rgba(71, 2, 2, 0.466);
+    background-color: rgb(0, 0, 0);
     color: #fff;
     padding: 1rem;
     border-radius: 5px;
@@ -153,11 +154,11 @@ body {
 }
 
 .close-btn:hover {
-    color: red; /* Change color on hover */
+    color: rgb(0, 0, 0); /* Change color on hover */
 }
 
 .name-tag, .role-tag {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-family: Avenir-medium;
 }
 
@@ -166,18 +167,48 @@ body {
     margin-bottom: 5%;
 }
 
+
+.header {
+    position: fixed;
+    top:0%;
+    left:0%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 1em 0;
+    text-align: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  /* Home link styling */
+  .home-link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1em;
+    font-family: Avenir-Light;
+    margin:3em;
+    
+  }
+  
+  .home-link:hover {
+    color:grey;
+  }
+
+
 /* Responsive text size for smaller screens */
 
 @media (max-width: 417px) {
-
+    .epage {
+        background-position-x:52%;
+    }
     
     .page h1{
-          font-size: 2em;
-          margin-top:49.5%;
+          font-size: 1.5em;
+          margin-top:90%;
       }
       .page h2 {
           font-size: 2em;
-          margin-top:95%;
+          margin-top:15%;
       }
       .textbox {
         width: 70%;
@@ -188,7 +219,6 @@ body {
     .hover-image {
         width: 2.6rem;
         height: auto;
-        border-radius: 50%;
         margin-top:20%;
         align-items: center;
     }
@@ -207,19 +237,27 @@ body {
     
         font-size: 0.4rem;
     }
-  
+    .home-link {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-size: 1em;
+        font-family: Avenir-Light;
+        margin:1em;
+    }
 } 
 
 @media (max-width: 376px) {
 
-    
+    .epage {
+              background-position-x:52%;
+    }
   .page h1{
-        font-size: 1em;
-        margin-top:40%;
+        font-size: 1.5em;
+        margin-top:65%;
     }
     .page h2 {
-        font-size: 1em;
-        margin-top:83%;
+        font-size: 2em;
+        margin-top:15%;
     }
     .textbox {
         width: 70%;
@@ -232,7 +270,6 @@ body {
 .hover-image {
     width: 2.6rem;
     height: auto;
-    border-radius: 50%;
     margin-top:20%;
     align-items: center;
 }
@@ -252,7 +289,3 @@ body {
     font-size: 0.4rem;
 }
 }
-
-   
-      
-  
