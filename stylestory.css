@@ -173,16 +173,17 @@ body {
     top:0%;
     left:0%;
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     padding: 1em 0;
     text-align: center;
     justify-content: center;
     z-index: 1000;
+    border-bottom: 0.01em solid #ffffff;
   }
   
   /* Home link styling */
   .home-link {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 1em;
     font-family: Avenir-Light;
@@ -238,7 +239,7 @@ body {
         font-size: 0.4rem;
     }
     .home-link {
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
         text-decoration: none;
         font-size: 1em;
         font-family: Avenir-Light;
