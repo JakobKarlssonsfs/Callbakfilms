@@ -38,6 +38,7 @@ z-index: -1;
  .logo {
    max-width: 30%;
    max-height: 40vh; /* Optional: Limits logo size to fit viewport */
+    overflow:hidden;
  }
 
 #callbak{
