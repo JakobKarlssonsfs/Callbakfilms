@@ -1,0 +1,23 @@
+/* Centered media container */
+.media-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+.centered-media {
+    max-width: 90%;
+    max-height: 80vh;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#media-title {
+    font-size: 1.5em;
+    color: #333;
+}
