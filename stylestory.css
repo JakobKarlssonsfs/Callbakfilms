@@ -105,9 +105,8 @@ body {
 }
 
 .hover-image {
-    width: 7rem;
+    width: 10rem;
     height: auto;
-    
     margin-top:-13%;
 }
 
@@ -120,7 +119,7 @@ body {
    left:50%;
    transform: translateX(-50%) translateY(-10px);
    pointer-events: none;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.89);
     color: #fff;
     padding: 1rem;
     border-radius: 5px;
@@ -167,6 +166,9 @@ body {
     margin-bottom: 5%;
 }
 
+#message {
+    color:rgb(117, 117, 3);
+}
 
 .header {
     position: fixed;
@@ -194,7 +196,15 @@ body {
   .home-link:hover {
     color:grey;
   }
-
+  .footer {
+    position: absolute;
+    top:198%;;
+    text-align: center; /* Center-align the text */
+    font-size: 0.5rem; /* Set the font size */
+    color: rgb(0, 0, 0); /* Dark text color */
+    font-family: Avenir-Light;
+    margin:auto;
+  }
 
 /* Responsive text size for smaller screens */
 
@@ -230,14 +240,11 @@ body {
         align-items: center;
     
     }
-    .name-tag {
+    .role-tag, .name-tag {
     
         font-size: 0.4rem;
     }
-    .role-tag {
-    
-        font-size: 0.4rem;
-    }
+
     .home-link {
         color: rgb(255, 255, 255);
         text-decoration: none;
@@ -281,11 +288,7 @@ body {
     align-items: center;
 
 }
-.name-tag {
-
-    font-size: 0.4rem;
-}
-.role-tag {
+.role-tag, .name-tag {
 
     font-size: 0.4rem;
 }
