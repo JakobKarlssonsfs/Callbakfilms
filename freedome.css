@@ -65,6 +65,15 @@ nav ul li a {
    text-decoration: none;
    font-family: 'Avenir-Light';
 }
+.footer {
+   position: fixed;
+   text-align: center; /* Center-align the text */
+  
+top:90%;
+   font-size: 0.5rem; /* Set the font size */
+   color: rgb(255, 255, 255); /* Dark text color */
+   font-family: Avenir-Light;
+ }
 @media (max-width: 417px) {
 ul {
    text-align: center;
