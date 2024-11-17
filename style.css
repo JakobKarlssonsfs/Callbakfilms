@@ -10,6 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color:black
   }
   video {
   position: absolute;
@@ -44,17 +45,20 @@
 
 .text-container {
     text-align: center;
-      display: flex;
-      flex-direction: column;
-      text-decoration: none;  
+      display:flex;
+      flex-direction:column;
+      text-decoration:none; 
+      
   }
   a {
     text-decoration:none;
+    
   }
   a h2{
     color:white;
     font-family: Avenir-Light;
-    font-size: 1em;
+    font-size: 0.5em;
+  
     }
   a h1{
   color:rgb(255, 255, 255);
@@ -62,8 +66,18 @@
   font-size: 2em;
   }
   h1:hover {
-  color:rgb(0, 0, 0);
+  color:rgb(26, 26, 26);
   }
+  .footer {
+    position: fixed;
+    text-align: center; /* Center-align the text */
+   
+top:90%;
+    font-size: 0.5rem; /* Set the font size */
+    color: rgb(255, 255, 255); /* Dark text color */
+    font-family: Avenir-Light;
+  }
+ 
   @media (max-width: 417px) {
     video {
       width: 100%;
