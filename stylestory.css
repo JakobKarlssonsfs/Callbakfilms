@@ -108,6 +108,7 @@ body {
     width: 10rem;
     height: auto;
     margin-top:-13%;
+    border: 5px solid black;
 }
 
 .textbox {
