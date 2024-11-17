@@ -91,10 +91,10 @@ body {
   }
 .heading {
 	display: flex;
-	height:10vh;
+	height:20vh;
 	justify-content: center;
 	text-align: center;
-	margin-top:5%;
+	margin-top:10%;
 }
   
 #headtext {
@@ -125,7 +125,7 @@ body {
 
 }
 .heading {
-
+height:10vh;
 	margin-top:25%;
 }
 #headtext {
