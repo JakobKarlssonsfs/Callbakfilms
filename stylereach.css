@@ -149,7 +149,15 @@ margin-left:9%;
     color:grey;
   }
 
-
+.footer {
+    position: fixed;
+    text-align: center; /* Center-align the text */
+   
+top:90%;
+    font-size: 0.5rem; /* Set the font size */
+    color: rgb(255, 255, 255); /* Dark text color */
+    font-family: Avenir-Light;
+  }
 /* Responsive text size for smaller screens */
 @media (max-width: 417px) {
 
