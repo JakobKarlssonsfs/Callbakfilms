@@ -77,6 +77,15 @@ top:90%;
     color: rgb(255, 255, 255); /* Dark text color */
     font-family: Avenir-Light;
   }
+  .logo {
+    width: 15%;
+    position: absolute;
+    top:35%;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);
+    padding-top: 20px; /* Add padding at the top to create space from the top edge */
+ }
  
   @media (max-width: 417px) {
     video {
@@ -91,12 +100,19 @@ top:90%;
       object-fit: cover;
       background-size: cover;
   }
-  a h2 {
-    font-size:0.5em;
-  }
-  a h1{
-    font-size:1.3em;
-  }
+  .logo {
+    width: 50%;
+    position: absolute;
+    top:35%;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);
+    padding-top: 20px; /* Add padding at the top to create space from the top edge */
+ }
+
+ 
+ /* Style the logo image */
+
   video{ 
     background-size: cover;
   }
