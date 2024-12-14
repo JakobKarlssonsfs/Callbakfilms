@@ -1,0 +1,182 @@
+
+@font-face {
+  font-family: 'Avenir-Medium';
+  src: url('/Fonts/Avenir-Medium.woff2') format('woff2'),
+       url('/Fonts/Avenir-medium.woff') format('woff'),
+       url('Fonts/Avenir-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  
+  font-family: 'Avenir-Light';
+  src: url('/Fonts/Avenir-Light.woff2') format('woff2'),
+       url('/Fonts/Avenir-Light.woff') format('woff'),
+       url('/Fonts/Avenir-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+background-color: black;
+overflow-x: hidden;
+}
+.container {
+width: 100%; /*Set the width of the entire website here */
+margin-right: auto;
+margin-left: auto; /* Margin-left and right are set to auto to center the container */
+}
+
+.header {
+position: fixed;
+top:0%;
+left:0%;
+width: 100%;
+background-color: rgb(0, 0, 0);
+padding: 1em 0;
+text-align: center;
+justify-content: center;
+z-index: 1000;
+border-bottom: 0.01em solid #ffffff;
+}
+.home-link {
+color: rgb(255, 255, 255);
+text-decoration: none;
+font-size: 1em;
+font-family: Avenir-Light;
+margin:3em;
+}
+.home-link:hover {
+color:grey;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  position: relative;
+  margin-top:20%;
+}
+
+.thumbnail {
+  width: 80%;
+  height: 70vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.thumbnail:nth-child(odd) {
+  align-self: flex-end; /* Place odd thumbnails on the right side */
+  transform: translateX(15vw);
+}
+
+.thumbnail:nth-child(even) {
+  align-self: flex-start; /* Place even thumbnails on the left side */
+  transform: translateX(-15vw);
+}
+
+/* Thumbnail Image */
+.thumbnail img {
+width: 80%;
+height: 100%;
+cursor: pointer;
+object-fit: cover;
+transition: transform 5s ease;
+
+}
+
+.thumbnail img:hover {
+transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Video Title */
+.thumbnail h1 {
+  position:relative;
+  text-align: center;
+font-size: 2.5rem;
+color: rgb(255, 255, 255);
+font-family: Avenir-Light;
+z-index: 1;
+}
+
+.thumbnail h2 {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  font-family: Avenir-Light;
+  z-index: 1;
+  }
+
+  .thumbnail.left {
+    transform: translateX(-50%);
+}
+
+/* Right-aligned thumbnails */
+.thumbnail.right {
+    transform: translateX(50%);
+}
+
+/* Parallax effect styling */
+.thumbnail {
+    will-change: transform;
+}
+
+.heading {
+display: flex;
+height:20vh;
+justify-content: center;
+text-align: center;
+margin-top:10%;
+}
+
+#headtext {
+
+font-size: 2rem;
+color: rgb(255, 255, 255);
+font-family: Avenir-Light;
+}
+.footer {
+  display:absolute;
+  top:198%;;
+justify-content: center;
+  text-align: center; /* Center-align the text */
+  font-size: 0.5rem; /* Set the font size */
+  color:rgb(255, 255, 255); /* Dark text color */
+  font-family: Avenir-Light;
+  margin:auto;
+}
+
+@media (max-width: 417px) {
+
+.home-link {
+color: rgb(255, 255, 255);
+text-decoration: none;
+font-size: 1em;
+font-family: Avenir-Light;
+margin:1em;
+
+}
+.heading {
+height:10vh;
+margin-top:25%;
+}
+#headtext {
+font-size: 1.5rem;
+
+}
+.video-grid{
+grid-template-columns: repeat(1, 1fr);
+}
+.video-item p {
+
+font-size: 0.8rem;
+}
+}
