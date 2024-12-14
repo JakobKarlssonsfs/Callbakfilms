@@ -68,7 +68,7 @@
 }
 
 .epage {
- background-image:url('https://raw.githubusercontent.com/JakobKarlssonsfs/Callbakfilms/main/barcodegold.png');
+ background-color: black;
             height: 100vh; /* Full viewport height */
             width:100%;
        background-position-y:-75%;
@@ -165,11 +165,11 @@ body {
 }
 
 .close-btn:hover {
-    color: rgb(0, 0, 0); /* Change color on hover */
+    color: rgb(90, 90, 90); /* Change color on hover */
 }
 
 .name-tag, .role-tag {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-family: Avenir-medium;
 }
 
@@ -178,6 +178,12 @@ body {
     margin-bottom: 5%;
 }
 
+.page p {
+    font-family: Avenir-Light;
+    text-align: center;
+    font-size: 1em;
+margin-top:3%;
+}
 #message {
     color:rgb(117, 117, 3);
 }
@@ -239,6 +245,12 @@ body {
         width: 70%;
         font-size: 0.7em;
         top:20%;
+    }
+    .page p {
+        font-family: Avenir-Light;
+        text-align: center;
+        font-size: 0.5em;
+    margin-top:3%;
     }
 
     .hover-image {
