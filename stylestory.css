@@ -41,7 +41,7 @@
 #kung {
     width: 20%;
     position:absolute;
-    top:22%;
+    top:35%;
     left:50%;
     transform: translate(-50%, -50%);
     justify-content: center;
@@ -87,8 +87,8 @@ background-size: cover;
     background-position: center;
     justify-content: center;
     align-items: center;
+    margin-top:10%;
 }
-
 
 
 
@@ -262,7 +262,7 @@ body {
     .home-link {
         color: rgb(255, 255, 255);
         text-decoration: none;
-        font-size: 1em;
+        font-size: 0.7em;
         font-family: Avenir-Light;
         margin:1em;
     }
