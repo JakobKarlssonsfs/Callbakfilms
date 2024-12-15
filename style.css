@@ -23,8 +23,10 @@ body, html {
     font-weight: bold;
     position: absolute;
     transform: translateX(100%);
+    -webkit-transform: transalteX(100%) translateZ(0);
     color:white;
     text-decoration: none;
+    will-change: transform;
 }
 
 
