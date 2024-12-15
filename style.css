@@ -50,9 +50,15 @@ p {
   color:white;
   font-family: Avenir-Light;
 }
+#enter {
+  font-size:6em;
+  color:white;
+  z-index: 1;
+}
 
 #second-section {
     background-color:black; /* Light blue */
+    height:30vh;
 }
 
 #third-section {
@@ -65,12 +71,12 @@ p {
   
 }
 #fifth-section {
-  height: 60vh;
+  height: 50vh;
     background-color:black; /* Light green */
 }
 
 #US {
-  margin-left:-26%;
+  margin-left:17%;
 }
 .a {
   text-align: center;
@@ -118,9 +124,10 @@ margin-top:-22%;
   color:white;
   font-family: Avenir-Light;
   position:absolute;
-  margin-left:70%;
-  margin-top:5%;
+  margin-left:40%;
+  margin-top:78%;
   text-align:center;
+  z-index: 1;
 }
 
 .secondp p {
@@ -141,14 +148,16 @@ margin-top:-22%;
 
 }
 
+
 .video-container {
   position:absolute;
   display: flex;
   flex-direction: column;
-max-width: 600px;
-max-height: 800px;
+max-width: 800px;
+max-height: 1200px;
+height:800px;
   top:20%;
-  aspect-ratio: 9/ 16;
+
   overflow: hidden;
   margin-top: -5%;
   border:2px solid white;
@@ -179,12 +188,12 @@ margin-top:80%;
   position: absolute;
   display:flex;
   
-  margin-left:60%;
+  margin-left:35%;
     margin-top:-95%;
   }
   .star {
     width: 35%;
-    margin-left:55%;
+    margin-left:35%;
     margin-top:-75%;
     }
     .section p {
@@ -194,18 +203,21 @@ margin-top:80%;
 .firstp p {
   font-size:0.7em;
   margin-left:30%;
+  margin-top:30%;
 }
 .secondp p {
   margin-left:30%;
   margin-top:150%;
 }
 .video-container {
-  max-width: 250px;
-  margin-top:-15%;
+  max-width: 320px;
+  height:650px;
+  margin-top:15%;
   overflow-x:hidden;
 }
 #enter {
-  margin-top:0%;
+  margin-top:60%;
+  font-size:1.9em;
 }
 #zero-section {
   height:90vh;
@@ -216,13 +228,9 @@ margin-top:80%;
 .title {
   font-size: 3em;
 }
-#enter {
-  font-size:1.5em;
-  margin-top:-50%;
-  margin-left:10%;
-}
+
 #US {
-  margin-left:18%;
+  margin-left:6%;
 }
 #fifth-section {
   height: 30vh;
