@@ -1,144 +1,229 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  } 
-  body {
-  height:100vh;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling */
+    background-color: black;
+}
+
+/* Section Styling */
+.section {
+    height: 50vh; /* Each section fills the full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Title Styling */
+.title {
+    font-size: 8vw; /* Large text size */
+    font-weight: bold;
+    position: absolute;
+    transform: translateX(100%);
+    color:white;
+    text-decoration: none;
+}
+
+
+/* Background Colors for Sections */
+#zero-section {
+  height: 150vh;
+}
+#zer-section {
+height:30vh;
+  background-color: black;
+}
+#first-section {
+    background-image: src="freedome.png";/* Light red */
+}
+.star1 {
+  width: 35%;
+  margin-left:35%;
+}
+
+p {
+  color:white;
+  font-family: Avenir-Light;
+}
+
+#second-section {
+    background-color:black; /* Light blue */
+}
+
+#third-section {
+    background-color:black; /* Light yellow */
+}
+
+#fourth-section {
+  height: 30vh;
+    background-color:black; /* Light green */
+  
+}
+#fifth-section {
+  height: 60vh;
+    background-color:black; /* Light green */
+}
+
+#US {
+  margin-left:-26%;
+}
+.a {
+  text-align: center;
+   justify-content: center;
+}
+
+.reachs {
+position: relative;
+  color:white;
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
   justify-content: center;
   align-items: center;
-  background-color:black
-  }
-  video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: auto;
-  z-index: -1;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-  background-size: cover;
-  overflow: hidden;    
-  }
-  @font-face {
-    font-family: 'Avenir-Medium';
-    src: url('/Fonts/Avenir-Medium.woff2') format('woff2'),
-         url('/Fonts/Avenir-medium.woff') format('woff'),
-         url('Fonts/Avenir-Medium.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-family: 'Avenir-Light';
-    src: url('/Fonts/Avenir-Light.woff2') format('woff2'),
-         url('/Fonts/Avenir-Light.woff') format('woff'),
-         url('/Fonts/Avenir-Light.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
 
-  /* Center the logo container */
+}
+.reachus {
+position: absolute;
+display:flex;
 
-.text-container {
-    text-align: center;
-      display:flex;
-      flex-direction:column;
-      text-decoration:none; 
-      
-  }
-  a {
-    text-decoration:none;
-    
-  }
-  a h2{
-    color:white;
-    font-family: Avenir-Light;
-    font-size: 0.5em;
-  
-    }
-  a h1{
-  color:rgb(255, 255, 255);
+margin-left:84%;
+  margin-top:-28%;
+}
+.logo {
+  width: 15%;
+  display: flex;
+  position:relative;
+align-items: center;
+margin-left:50%;
+transform: translate(-50%, -50%);
+margin-top:20%;
+}
+
+.star {
+width: 25%;
+display: flex;
+position:absolute;
+align-items: center;
+margin-left:75%;
+transform: translate(-50%, -50%);
+margin-top:-22%;
+}
+
+.firstp p {
+  color:white;
   font-family: Avenir-Light;
-  font-size: 2em;
-  }
-  h1:hover {
-  color:rgb(26, 26, 26);
-  }
-  .footer {
-    position: fixed;
-    text-align: center; /* Center-align the text */
-   
-top:90%;
-    font-size: 0.5rem; /* Set the font size */
-    color: rgb(255, 255, 255); /* Dark text color */
-    font-family: Avenir-Light;
-  }
-  .logo {
-    width: 15%;
-    position: absolute;
-    top:35%;
-    justify-content: center;
-    align-items: center;
-    transform: translateX(-50%);
-    padding-top: 20px; /* Add padding at the top to create space from the top edge */
- }
- 
-  @media (max-width: 417px) {
-    video {
-      width: 100%;
-      height:100%;
-      max-height:100%;
-      top:50%;
-      left:50%;
-      z-index: -1;
-      position:center;
-      overflow:hidden;
-      object-fit: cover;
-      background-size: cover;
-  }
-  .logo {
-    width: 50%;
-    position: absolute;
-    top:35%;
-    justify-content: center;
-    align-items: center;
-    transform: translateX(-50%);
-    padding-top: 20px; /* Add padding at the top to create space from the top edge */
- }
+  position:absolute;
+  margin-left:70%;
+  margin-top:5%;
+  text-align:center;
+}
 
- 
- /* Style the logo image */
+.secondp p {
+  color:white;
+  font-family: Avenir-Light;
+  position:absolute;
+  margin-left:70%;
+  margin-top:55%;
+  text-align:center;
+}
+#callbak{
+  
+  color:white;
+  position: relative;
+  text-decoration: none;
+  font-family: 'Avenir-Light';
+ font-size: 0.7em;
 
-  video{ 
-    background-size: cover;
-  }
-  @media (max-width: 376px) {
-  video {
-  background-size: cover;
-  }
-  a h2{
-    font-size:0.5em;
-  }
-  a h1{
-    font-size:1.3em;
-  }
-  @media (max-width: 768px) {
-  video {
-    width: 100%;
-    height:100%;
-    max-height:100%;
-    top:50%;
-    left:50%;
-    z-index: -1;
-    position:center;
-    overflow:hidden;
+}
+
+.video-container {
+  position:absolute;
+  display: flex;
+  flex-direction: column;
+max-width: 600px;
+max-height: 800px;
+  top:20%;
+  aspect-ratio: 9/ 16;
+  overflow: hidden;
+  margin-top: -5%;
+  border:2px solid white;
+
+}
+
+#video {
+  height: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  
+
+}
+
+@media (max-width: 417px) {
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
     object-fit: cover;
-    background-size: cover;
   }
+  .logo {
+width: 40%;
+margin-top:80%;
+}
+.reachus {
+  position: absolute;
+  display:flex;
+  
+  margin-left:60%;
+    margin-top:-95%;
   }
-  }
-  }
+  .star {
+    width: 35%;
+    margin-left:55%;
+    margin-top:-75%;
+    }
+    .section p {
+      margin-top:-3%;
+    }
+
+.firstp p {
+  font-size:0.7em;
+  margin-left:30%;
+}
+.secondp p {
+  margin-left:30%;
+  margin-top:150%;
+}
+.video-container {
+  max-width: 250px;
+  margin-top:-15%;
+  overflow-x:hidden;
+}
+#enter {
+  margin-top:0%;
+}
+#zero-section {
+  height:90vh;
+}
+#zer-section {
+  height:0vh;
+}
+.title {
+  font-size: 3em;
+}
+#enter {
+  font-size:1.5em;
+  margin-top:-50%;
+  margin-left:10%;
+}
+#US {
+  margin-left:18%;
+}
+#fifth-section {
+  height: 30vh;
+    background-color:black; /* Light green */
+}
+}
